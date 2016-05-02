@@ -1,6 +1,6 @@
 # iFeng-und-Autofan（凤凰网汽车之友合作页面）
 
-> **样式及功能参照*[第一车网首页]*(http://www.iautos.cn/beijing/)**
+> **样式及功能参照*[第一车网首页](http://www.iautos.cn/beijing/)***
 
 ***
 
