@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="text/html;charset=utf-8" http-equiv="content-type" />
+	<link rel="stylesheet" href="../styles/iautos.min.css" type="text/css" />
+	<script type="text/javascript" src="../scripts/plugin/clamp.min.js"></script>
+	<script type="text/javascript" src="../scripts/plugin/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="../scripts/iautos.js"></script>
+	<title>凤凰网汽车之友合作项目</title>
+	<script type="text/javascript">
+		window.onload = function() {
+			var _url = window.location.href;
+			var _vater = document.getElementById('iautosWrapper');
+
+			if ( _url.match('autofan') ) {
+				_vater.style.width = '960px';
+			}
+		}
+	</script>
+</head>
+<body>
+	<div id="iautosWrapper" class="iautos-wrap">
+		<div class="advertisement" id="advertisement"></div>
+		<div class="top-block clear">
+			<div class="left-box">
+				<div class="title-nav clear">
+					<h5 class="title">快速选车</h5>
+					<div class="address">
+						<span id="local" class="local">北京</span><span class="change">[切换]</span><i class="joint" style="display:none"></i>
+						<div id="addressBoxes" class="address-boxes" style="display:none">
+							<i id="addressCloseBtn" class="address-close"></i>
+							<div class="top-nav clean">
+								<h6 class="nav-title">省份首字母</h6>
+								<ul class="address-letters clean">
+									<li data-letter="a">A</li>
+									<li data-letter="b">B</li>
+									<li data-letter="c">C</li>
+									<li data-letter="f">F</li>
+									<li data-letter="g">G</li>
+									<li data-letter="h">H</li>
+									<li data-letter="j">J</li>
+									<li data-letter="l">L</li>
+									<li data-letter="n">N</li>
+									<li data-letter="q">Q</li>
+									<li data-letter="s">S</li>
+									<li data-letter="t">T</li>
+									<li data-letter="x">X</li>
+									<li data-letter="y">Y</li>
+									<li data-letter="z">Z</li>
+									<li data-letter="all" class="all">全部</li>
+								</ul>
+							</div>
+							<div class="cities">
+								<div class="hot-cities-box clean">
+									<h6 class="box-title">热门城市</h6>
+									<ul class="cities-list clean">
+										<li><a href="javascript:void(0)">全国</a></li>
+										<li><a href="javascript:void(0)">北京</a></li>
+										<li><a href="javascript:void(0)">上海</a></li>
+										<li><a href="javascript:void(0)">天津</a></li>
+										<li><a href="javascript:void(0)">重庆</a></li>
+										<li><a href="javascript:void(0)">广州</a></li>
+										<li><a href="javascript:void(0)">深圳</a></li>
+										<li><a href="javascript:void(0)">杭州</a></li>
+										<li><a href="javascript:void(0)">南京</a></li>
+									</ul>
+								</div>
+								<div class="normal-cities clean" data-letter="province-a">
+									<div class="province-letter-wrap"><h6 class="province-letter">A</h6></div>
+									<h6 class="province-title"><a href="javascript:void(0)">全国</a></h6>
+									<ul class="cities-list clean">
+										<li><a href="javascript:void(0)">全国</a></li>
+										<li><a href="javascript:void(0)">北京</a></li>
+										<li><a href="javascript:void(0)">上海</a></li>
+										<li><a href="javascript:void(0)">天津</a></li>
+										<li><a href="javascript:void(0)">重庆</a></li>
+										<li><a href="javascript:void(0)">广州</a></li>
+										<li><a href="javascript:void(0)">深圳</a></li>
+										<li><a href="javascript:void(0)">杭州</a></li>
+										<li><a href="javascript:void(0)">南京</a></li>
+										<li><a href="javascript:void(0)">全国</a></li>
+										<li><a href="javascript:void(0)">北京</a></li>
+										<li><a href="javascript:void(0)">上海</a></li>
+										<li><a href="javascript:void(0)">天津</a></li>
+										<li><a href="javascript:void(0)">重庆</a></li>
+										<li><a href="javascript:void(0)">广州</a></li>
+										<li><a href="javascript:void(0)">深圳</a></li>
+										<li><a href="javascript:void(0)">杭州</a></li>
+										<li><a href="javascript:void(0)">南京</a></li>
+									</ul>
+								</div>
+								<div class="normal-cities clean" data-letter="province-a">
+									<div class="province-letter-wrap"><h6 class="province-letter">A</h6></div>
+									<h6 class="province-title"><a href="javascript:void(0)">全国</a></h6>
+									<ul class="cities-list clean">
+										<li><a href="javascript:void(0)">全国</a></li>
+										<li><a href="javascript:void(0)">北京</a></li>
+										<li><a href="javascript:void(0)">上海</a></li>
+										<li><a href="javascript:void(0)">天津</a></li>
+										<li><a href="javascript:void(0)">重庆</a></li>
+										<li><a href="javascript:void(0)">广州</a></li>
+										<li><a href="javascript:void(0)">深圳</a></li>
+										<li><a href="javascript:void(0)">杭州</a></li>
+										<li><a href="javascript:void(0)">南京</a></li>
+										<li><a href="javascript:void(0)">全国</a></li>
+										<li><a href="javascript:void(0)">北京</a></li>
+										<li><a href="javascript:void(0)">上海</a></li>
+										<li><a href="javascript:void(0)">天津</a></li>
+										<li><a href="javascript:void(0)">重庆</a></li>
+										<li><a href="javascript:void(0)">广州</a></li>
+										<li><a href="javascript:void(0)">深圳</a></li>
+										<li><a href="javascript:void(0)">杭州</a></li>
+										<li><a href="javascript:void(0)">南京</a></li>
+									</ul>
+								</div>
+								<div class="normal-cities clean" data-letter="province-a">
+									<div class="province-letter-wrap"><h6 class="province-letter">A</h6></div>
+									<h6 class="province-title"><a href="javascript:void(0)">全国</a></h6>
+									<ul class="cities-list clean">
+										<li><a href="javascript:void(0)">全国</a></li>
+										<li><a href="javascript:void(0)">北京</a></li>
+										<li><a href="javascript:void(0)">上海</a></li>
+										<li><a href="javascript:void(0)">天津</a></li>
+										<li><a href="javascript:void(0)">重庆</a></li>
+										<li><a href="javascript:void(0)">广州</a></li>
+										<li><a href="javascript:void(0)">深圳</a></li>
+										<li><a href="javascript:void(0)">杭州</a></li>
+										<li><a href="javascript:void(0)">南京</a></li>
+										<li><a href="javascript:void(0)">全国</a></li>
+										<li><a href="javascript:void(0)">北京</a></li>
+										<li><a href="javascript:void(0)">上海</a></li>
+										<li><a href="javascript:void(0)">天津</a></li>
+										<li><a href="javascript:void(0)">重庆</a></li>
+										<li><a href="javascript:void(0)">广州</a></li>
+										<li><a href="javascript:void(0)">深圳</a></li>
+										<li><a href="javascript:void(0)">杭州</a></li>
+										<li><a href="javascript:void(0)">南京</a></li>
+									</ul>
+								</div>
+								<div class="normal-cities clean" data-letter="province-b">
+									<div class="province-letter-wrap"><h6 class="province-letter">A</h6></div>
+									<h6 class="province-title"><a href="javascript:void(0)">全国</a></h6>
+									<ul class="cities-list clean">
+										<li><a href="javascript:void(0)">全国</a></li>
+										<li><a href="javascript:void(0)">北京</a></li>
+										<li><a href="javascript:void(0)">上海</a></li>
+										<li><a href="javascript:void(0)">天津</a></li>
+										<li><a href="javascript:void(0)">重庆</a></li>
+										<li><a href="javascript:void(0)">广州</a></li>
+										<li><a href="javascript:void(0)">深圳</a></li>
+										<li><a href="javascript:void(0)">杭州</a></li>
+										<li><a href="javascript:void(0)">南京</a></li>
+										<li><a href="javascript:void(0)">全国</a></li>
+										<li><a href="javascript:void(0)">北京</a></li>
+										<li><a href="javascript:void(0)">上海</a></li>
+										<li><a href="javascript:void(0)">天津</a></li>
+										<li><a href="javascript:void(0)">重庆</a></li>
+										<li><a href="javascript:void(0)">广州</a></li>
+										<li><a href="javascript:void(0)">深圳</a></li>
+										<li><a href="javascript:void(0)">杭州</a></li>
+										<li><a href="javascript:void(0)">南京</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<h6 class="tit">价格</h6>
+					<ul class="list clean">
+						<li><a href="javascript:void(0)">3万以内</a></li>
+						<li><a href="javascript:void(0)">3-5万</a></li>
+						<li><a href="javascript:void(0)">5-8万</a></li>
+						<li><a href="javascript:void(0)">8-12万</a></li>
+						<li><a href="javascript:void(0)">12-15万</a></li>
+						<li><a href="javascript:void(0)">15-20万</a></li>
+						<li><a href="javascript:void(0)">20万以上</a></li>
+					</ul>
+				</div>
+				<div class="item">
+					<h6 class="tit">品牌</h6>
+					<ul class="list clean">
+						<li><a href="javascript:void(0)">大众</a></li>
+						<li><a href="javascript:void(0)">奥迪</a></li>
+						<li><a href="javascript:void(0)">宝马</a></li>
+						<li><a href="javascript:void(0)">丰田</a></li>
+						<li><a href="javascript:void(0)">奔驰</a></li>
+						<li><a href="javascript:void(0)">别克</a></li>
+						<li><a href="javascript:void(0)">本田</a></li>
+						<li><a href="javascript:void(0)">现代</a></li>
+						<li><a href="javascript:void(0)">福特</a></li>
+						<li><a href="javascript:void(0)">雪佛兰</a></li>
+					</ul>
+				</div>
+				<div class="item">
+					<h6 class="tit">级别</h6>
+					<ul class="list clean">
+						<li><a href="javascript:void(0)">中型车</a></li>
+						<li><a href="javascript:void(0)">MPV</a></li>
+						<li><a href="javascript:void(0)">紧凑型SUV</a></li>
+						<li><a href="javascript:void(0)">豪华车</a></li>
+					</ul>
+				</div>
+				<div class="search-form">
+					<form class="clean">
+						<input class="search-text" type="text" maxlength="20" placeholder="请输入品牌/车系" />
+						<input class="search-btn" type="submit" value="搜索" />
+					</form>
+				</div>
+			</div>
+			<div class="mid-box">
+				<div class="mid-top">
+					<ul id="iautosBanner" class="iautos-banner clean">
+						<li data-num="1"><a href="javascript:void(0)"><img src="../images/banner1.jpg" width="100%" /></a></li>
+						<li data-num="2"><a href="javascript:void(0)"><img src="../images/banner2.jpg" width="100%" /></a></li>
+						<li data-num="3"><a href="javascript:void(0)"><img src="../images/banner3.jpg" width="100%" /></a></li>
+					</ul>
+					<ul id="iautosBannerPager" class="iautos-banner-pager clean">
+						<li><i></i></li>
+						<li>></li>
+						<li></li>
+					</ul>
+				</div>
+				<div class="mid-bottom clean">
+					<div class="img"><img src="../images/mid-bottom.jpg" width="100%" /></div>
+					<ul class="list">
+						<li><a href="javascript:void(0)"><i class="point">▪</i>这帖子有毒！看完居然想买辆手挡车</a></li>
+						<li><a href="javascript:void(0)"><i class="point">▪</i>进享自由——奥迪Q7</a></li>
+						<li><a href="javascript:void(0)"><i class="point">▪</i>我强悍的外表下一颗优雅的心—宝马X5</a></li>
+						<li><a href="javascript:void(0)"><i class="point">▪</i>运动化与轻量化——奔驰SL级</a></li>
+						<li><a href="javascript:void(0)"><i class="point">▪</i>重回T时代—法拉利California</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="right-box">
+				<div class="right-top">
+					<p class="count">车网当前在售车源<span class="num">365487</span>辆</p>
+					<ul class="detail">
+						<li class="clean">
+							<span class="text-left">一周成交:</span>
+							<span class="text-right"><i class="num">3</i><i class="num">6</i><i class="num">5</i><i class="num">8</i>辆</span>
+						</li>
+						<li class="clean">
+							<span class="text-left">成交均价:</span>
+							<span class="text-right"><i class="num">1</i><i class="num">4</i><i class="num">8</i><i class="num">6</i><i class="num">3</i><i class="num">0</i>辆</span>
+						</li>
+					</ul>
+					<p class="most-concern">最关注：<span class="style">奥迪A6L</span><span class="style">雅阁</span><span class="style">宝马3系</span></p>
+				</div>
+				<ul class="right-mid clean">
+					<li>
+						<a href="javascript:void(0)">
+							<div class="sou"><i class="ico"></i></div>
+							<p class="text">便捷选车</p>
+							<p class="text">下载App</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<div class="wen"><i class="ico"></i></div>
+							<p class="text">专家问答</p>
+							<p class="text">1对1服务</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<div class="ping"><i class="ico"></i></div>
+							<p class="text">专业评估</p>
+							<p class="text">权威靠谱</p>
+						</a>
+					</li>
+				</ul>
+				<div class="right-bottom"><a href="javascript:void(0)"><img src="../images/99-link.jpg" width="100%" height="100%" /></a></div>
+			</div>
+		</div>
+		<div class="good-cars">
+			<div class="block-title">
+				<h5 class="title">身边好车</h5>
+				<ul class="nav clean">
+					<li class="active pointer"><span>最新上架</span></li>
+					<li class="pointer"><span>家庭用车</span></li>
+					<li class="pointer"><span>SUV</span></li>
+					<li class="pointer"><span>商务用车</span></li>
+					<li class="pointer"><span>豪华车</span></li>
+				</ul>
+				<a class="more-link" href="javascript:void(0)">更多车源<span class="link-ico"></span></a>
+			</div>
+			<ul class="lists clean">
+				<li>
+					<a href="javascript:void(0)">
+						<div class="img"><img src="../images/car-li.jpg" width="100%" /></div>
+						<div class="info">
+							<h6 class="tit">马自达睿翼 2.5L 手自一体 至尊版</h6>
+							<div class="mid">
+								<span class="price">￥<b class="num">999.99</b><b>万</b></span>
+							</div>
+							<div class="bottom">
+								<span class="time">2012年12月</span>
+								<span class="time">12.88万公里</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<div class="img"><img src="../images/car-li.jpg" width="100%" /></div>
+						<div class="info">
+							<h6 class="tit">马自达睿翼 2.5L 手自一体 至尊版</h6>
+							<div class="mid">
+								<span class="price">￥<b class="num">999.99</b><b>万</b></span>
+							</div>
+							<div class="bottom">
+								<span class="time">2012年12月</span>
+								<span class="time">12.88万公里</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<div class="img"><img src="../images/car-li.jpg" width="100%" /></div>
+						<div class="info">
+							<h6 class="tit">马自达睿翼 2.5L 手自一体 至尊版</h6>
+							<div class="mid">
+								<span class="price">￥<b class="num">999.99</b><b>万</b></span>
+							</div>
+							<div class="bottom">
+								<span class="time">2012年12月</span>
+								<span class="time">12.88万公里</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<div class="img"><img src="../images/car-li.jpg" width="100%" /></div>
+						<div class="info">
+							<h6 class="tit">马自达睿翼 2.5L 手自一体 至尊版</h6>
+							<div class="mid">
+								<span class="price">￥<b class="num">999.99</b><b>万</b></span>
+							</div>
+							<div class="bottom">
+								<span class="time">2012年12月</span>
+								<span class="time">12.88万公里</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<div class="img"><img src="../images/car-li.jpg" width="100%" /></div>
+						<div class="info">
+							<h6 class="tit">马自达睿翼 2.5L 手自一体 至尊版</h6>
+							<div class="mid">
+								<span class="price">￥<b class="num">999.99</b><b>万</b></span>
+							</div>
+							<div class="bottom">
+								<span class="time">2012年12月</span>
+								<span class="time">12.88万公里</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<div class="img"><img src="../images/car-li.jpg" width="100%" /></div>
+						<div class="info">
+							<h6 class="tit">马自达睿翼 2.5L 手自一体 至尊版</h6>
+							<div class="mid">
+								<span class="price">￥<b class="num">999.99</b><b>万</b></span>
+							</div>
+							<div class="bottom">
+								<span class="time">2012年12月</span>
+								<span class="time">12.88万公里</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<div class="img"><img src="../images/car-li.jpg" width="100%" /></div>
+						<div class="info">
+							<h6 class="tit">马自达睿翼 2.5L 手自一体 至尊版</h6>
+							<div class="mid">
+								<span class="price">￥<b class="num">999.99</b><b>万</b></span>
+							</div>
+							<div class="bottom">
+								<span class="time">2012年12月</span>
+								<span class="time">12.88万公里</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<div class="img"><img src="../images/car-li.jpg" width="100%" /></div>
+						<div class="info">
+							<h6 class="tit">马自达睿翼 2.5L 手自一体 至尊版</h6>
+							<div class="mid">
+								<span class="price">￥<b class="num">999.99</b><b>万</b></span>
+							</div>
+							<div class="bottom">
+								<span class="time">2012年12月</span>
+								<span class="time">12.88万公里</span>
+							</div>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="neun-cars">
+			<div class="block-title clean">
+				<h5 class="title">99好车</h5>
+				<p class="explain">甄选99质检A级车源，另有安心质保给您更多保障</p>
+				<a class="more-link" href="javascript:void(0)">更多99好车<span class="link-ico"></span></a>
+			</div>
+			<ul class="lists clean">
+				<li>
+					<a href="javascript:void(0)">
+						<div class="img"><img src="../images/car-li.jpg" width="100%" /><i class="neun-confirm"></i></div>
+						<div class="info">
+							<h6 class="tit">马自达睿翼 2.5L 手自一体 至尊版</h6>
+							<div class="mid">
+								<span class="price">￥<b class="num">999.99</b><b>万</b></span>
+							</div>
+							<div class="bottom">
+								<span class="time">2012年12月</span>
+								<span class="time">12.88万公里</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<div class="img"><img src="../images/car-li.jpg" width="100%" /><i class="neun-confirm"></i></div>
+						<div class="info">
+							<h6 class="tit">马自达睿翼 2.5L 手自一体 至尊版</h6>
+							<div class="mid">
+								<span class="price">￥<b class="num">999.99</b><b>万</b></span>
+							</div>
+							<div class="bottom">
+								<span class="time">2012年12月</span>
+								<span class="time">12.88万公里</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<div class="img"><img src="../images/car-li.jpg" width="100%" /><i class="neun-confirm"></i></div>
+						<div class="info">
+							<h6 class="tit">马自达睿翼 2.5L 手自一体 至尊版</h6>
+							<div class="mid">
+								<span class="price">￥<b class="num">999.99</b><b>万</b></span>
+							</div>
+							<div class="bottom">
+								<span class="time">2012年12月</span>
+								<span class="time">12.88万公里</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<div class="img"><img src="../images/car-li.jpg" width="100%" /><i class="neun-confirm"></i></div>
+						<div class="info">
+							<h6 class="tit">马自达睿翼 2.5L 手自一体 至尊版</h6>
+							<div class="mid">
+								<span class="price">￥<b class="num">999.99</b><b>万</b></span>
+							</div>
+							<div class="bottom">
+								<span class="time">2012年12月</span>
+								<span class="time">12.88万公里</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<div class="img"><img src="../images/car-li.jpg" width="100%" /><i class="neun-confirm"></i></div>
+						<div class="info">
+							<h6 class="tit">马自达睿翼 2.5L 手自一体 至尊版</h6>
+							<div class="mid">
+								<span class="price">￥<b class="num">999.99</b><b>万</b></span>
+							</div>
+							<div class="bottom">
+								<span class="time">2012年12月</span>
+								<span class="time">12.88万公里</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<div class="img"><img src="../images/car-li.jpg" width="100%" /><i class="neun-confirm"></i></div>
+						<div class="info">
+							<h6 class="tit">马自达睿翼 2.5L 手自一体 至尊版</h6>
+							<div class="mid">
+								<span class="price">￥<b class="num">999.99</b><b>万</b></span>
+							</div>
+							<div class="bottom">
+								<span class="time">2012年12月</span>
+								<span class="time">12.88万公里</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<div class="img"><img src="../images/car-li.jpg" width="100%" /><i class="neun-confirm"></i></div>
+						<div class="info">
+							<h6 class="tit">马自达睿翼 2.5L 手自一体 至尊版</h6>
+							<div class="mid">
+								<span class="price">￥<b class="num">999.99</b><b>万</b></span>
+							</div>
+							<div class="bottom">
+								<span class="time">2012年12月</span>
+								<span class="time">12.88万公里</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<div class="img"><img src="../images/car-li.jpg" width="100%" /><i class="neun-confirm"></i></div>
+						<div class="info">
+							<h6 class="tit">马自达睿翼 2.5L 手自一体 至尊版</h6>
+							<div class="mid">
+								<span class="price">￥<b class="num">999.99</b><b>万</b></span>
+							</div>
+							<div class="bottom">
+								<span class="time">2012年12月</span>
+								<span class="time">12.88万公里</span>
+							</div>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="confirm-cars">
+			<div class="block-title clean">
+				<h5 class="title">厂商认证</h5>
+				<p class="explain">各品牌厂商4S店认证车源，享受厂家质保</p>
+			</div>
+			<ul class="brand-ico clean">
+				<li data-name="aodi" class="brand-ico1 pointer"></li>
+				<li data-name="luhu" class="brand-ico2 pointer"></li>
+				<li data-name="leikesasi" class="brand-ico3 pointer"></li>
+				<li data-name="baoshijie" class="brand-ico4 pointer"></li>
+				<li data-name="qiya" class="brand-ico5 pointer"></li>
+				<li data-name="guangqi" class="brand-ico6 pointer"></li>
+				<li data-name="dongfengrichan" class="brand-ico7 pointer"></li>
+				<li data-name="yicheng" class="brand-ico8 pointer"></li>
+			</ul>
+			<ul class="lists clean">
+				<li>
+					<a href="javascript:void(0)">
+						<div class="img"><img src="../images/car-li.jpg" width="100%" /></div>
+						<div class="info">
+							<h6 class="tit">马自达睿翼 2.5L 手自一体 至尊版</h6>
+							<div class="mid">
+								<span class="price">￥<b class="num">999.99</b><b>万</b></span>
+							</div>
+							<div class="bottom">
+								<span class="time">2012年12月</span>
+								<span class="time">12.88万公里</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<div class="img"><img src="../images/car-li.jpg" width="100%" /></div>
+						<div class="info">
+							<h6 class="tit">马自达睿翼 2.5L 手自一体 至尊版</h6>
+							<div class="mid">
+								<span class="price">￥<b class="num">999.99</b><b>万</b></span>
+							</div>
+							<div class="bottom">
+								<span class="time">2012年12月</span>
+								<span class="time">12.88万公里</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<div class="img"><img src="../images/car-li.jpg" width="100%" /></div>
+						<div class="info">
+							<h6 class="tit">马自达睿翼 2.5L 手自一体 至尊版</h6>
+							<div class="mid">
+								<span class="price">￥<b class="num">999.99</b><b>万</b></span>
+							</div>
+							<div class="bottom">
+								<span class="time">2012年12月</span>
+								<span class="time">12.88万公里</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<div class="img"><img src="../images/car-li.jpg" width="100%" /></div>
+						<div class="info">
+							<h6 class="tit">马自达睿翼 2.5L 手自一体 至尊版</h6>
+							<div class="mid">
+								<span class="price">￥<b class="num">999.99</b><b>万</b></span>
+							</div>
+							<div class="bottom">
+								<span class="time">2012年12月</span>
+								<span class="time">12.88万公里</span>
+							</div>
+						</div>
+					</a>
+				</li>
+			</ul>
+			<ul class="brand-ico clean">
+				<li data-name="jiebao" class="brand-ico9 pointer"></li>
+				<li data-name="longxin" class="brand-ico10 pointer"></li>
+				<li data-name="yiqidazhong" class="brand-ico11 pointer"></li>
+				<li data-name="chengxin" class="brand-ico12 pointer"></li>
+				<li data-name="woerwo" class="brand-ico13 pointer"></li>
+				<li data-name="yiqifengtian" class="brand-ico14 pointer"></li>
+				<li data-name="jinkoudazhong" class="brand-ico15 pointer"></li>
+				<li data-name="baoma" class="brand-ico16 pointer"></li>
+			</ul>
+		</div>
+		<div class="bottom-box clear">
+			<div class="useful-plugin">
+				<div class="block-title clean">
+					<h5 class="title">实用工具</h5>
+				</div>
+				<div class="plugin-wrap clear">
+					<div class="fast-ping">
+						<h6 class="tit">快速评估</h6>
+						<div class="select-tag clean">
+							<input class="choose-style-text" type="text" readonly="readonly" placeholder="选择品牌或车系快速定位车型" />
+							<span id="chooseStyleBtn" class="choose-style-btn pointer">选择车型</span>
+						</div>
+						<div class="clear">
+							<div class="select-tag select-l" tabindex="-1">
+								<div class="select-text">
+									<span id="brandTimeText">上牌时间</span>
+								</div>
+								<ul class="select-list time-select" style="display:none">
+									<li>2016</li>
+									<li>2015</li>
+									<li>2014</li>
+									<li>2013</li>
+									<li>2012</li>
+									<li>2011</li>
+									<li>2010</li>
+									<li>2009</li>
+									<li>2008</li>
+									<li>2007</li>
+								</ul>
+							</div>
+							<div class="select-tag select-r"><input type="text" maxlength="3" placeholder="行驶里数" /><span class="unit">万公里</span></div>
+						</div>
+						<div class="select-tag" tabindex="-1">
+							<div id="selectText" class="select-text">北京</div>
+							<div class="select-list area-select clean" style="display:none">
+								<div class="area-select-item">
+									<h6 class="area-select-title">A-F</h6>
+									<ul class="area-select-lists">
+										<li>安徽</li>
+										<li>北京</li>
+										<li>重庆</li>
+										<li>福建</li>
+									</ul>
+								</div>
+								<div class="area-select-item">
+									<h6 class="area-select-title">G</h6>
+									<ul class="area-select-lists">
+										<li>甘肃</li>
+										<li>广东</li>
+										<li>广西</li>
+										<li>贵州</li>
+									</ul>
+								</div>
+								<div class="area-select-item">
+									<h6 class="area-select-title">H</h6>
+									<ul class="area-select-lists">
+										<li>海南</li>
+										<li>河北</li>
+										<li>黑龙江</li>
+										<li>河南</li>
+										<li>湖北</li>
+										<li>湖南</li>
+									</ul>
+								</div>
+								<div class="area-select-item">
+									<h6 class="area-select-title">J-L</h6>
+									<ul class="area-select-lists">
+										<li>江苏</li>
+										<li>江西</li>
+										<li>吉林</li>
+										<li>辽宁</li>
+									</ul>
+								</div>
+								<div class="area-select-item">
+									<h6 class="area-select-title">N-Q</h6>
+									<ul class="area-select-lists">
+										<li>内蒙古</li>
+										<li>宁夏</li>
+										<li>青海</li>
+									</ul>
+								</div>
+								<div class="area-select-item">
+									<h6 class="area-select-title">S-T</h6>
+									<ul class="area-select-lists">
+										<li>山东</li>
+										<li>上海</li>
+										<li>陕西</li>
+										<li>山西</li>
+										<li>四川</li>
+										<li>天津</li>
+									</ul>
+								</div>
+								<div class="area-select-item">
+									<h6 class="area-select-title">X-Y</h6>
+									<ul class="area-select-lists">
+										<li>新疆</li>
+										<li>西藏</li>
+										<li>云南</li>
+										<li>浙江</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="submit"><input class="submit-btn" type="button" value="快速评估" /></div>
+					</div>
+					<div class="expert-ping">
+						<h6 class="tit">二手车准入查询</h6>
+						<div class="search-btn"><a href="javascript:void(0)">按准入城市查询</a></div>
+						<div class="search-btn"><a href="javascript:void(0)">按排放标准查询</a></div>
+						<h6 class="fast-locate-tit">快速定位</h6>
+						<ul class="fast-locate-list clean">
+							<li><a href="javascript:void(0)">青岛二手车准入标准</a></li>
+							<li><a href="javascript:void(0)">乌鲁木齐二手车准入标准</a></li>
+							<li><a href="javascript:void(0)">哈尔滨二手车准入标准</a></li>
+							<li><a href="javascript:void(0)">青岛二手车准入标准</a></li>
+							<li><a href="javascript:void(0)">青岛二手车准入标准</a></li>
+							<li><a href="javascript:void(0)">青岛二手车准入标准</a></li>
+							<li><a href="javascript:void(0)">青岛二手车准入标准</a></li>
+							<li><a href="javascript:void(0)">青岛二手车准入标准</a></li>
+							<li><a href="javascript:void(0)">青岛二手车准入标准</a></li>
+							<li><a href="javascript:void(0)">青岛二手车准入标准</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="expert-answer">
+				<div class="block-title clean">
+					<h5 class="title">专家问答</h5>
+					<a class="more-link" href="javascript:void(0)">咨询专家<span class="link-ico"></span></a>
+				</div>
+				<ul class="ask-list">
+					<li><a name="hotNews" href="javascript:void(0)">想问一下北京的二手车桑塔纳志俊09年12月份的能过户到菏泽吗？想问一下北京的二手车桑塔纳志俊09年12月份的能过户到菏泽吗？</a></li>
+					<li><a name="hotNews" href="javascript:void(0)">你好，我想问下09年的本田飞度两厢的，1.5高配，带天窗，车况好，跑了6万多，多少钱能买？</a></li>
+					<li><a name="hotNews" href="javascript:void(0)">刚买一辆开瑞K50还没上牌呢，裸车价5.78万，现在要卖值多少钱？刚买一辆开瑞K50还没上牌呢，裸车价5.78万，现在要卖值多少钱？</a></li>
+				</ul>
+				<div class="more clean"><a class="more-link" href="javascript:void(0)">更多<span class="link-ico"></span></a></div>
+			</div>
+		</div>
+		<div class="link">
+			<ul class="link-nav clean">
+				<li class="link-title active" data-name="hot-cities"><a class="n" href="javascript:void(0)">热门城市</a></li>
+				<li class="link-title" data-name="service-center"><a class="n" href="javascript:void(0)">帮助中心</a></li>
+				<li class="link-title" data-name="iautos"><a class="n" href="javascript:void(0)">第一车网</a></li>
+			</ul>
+			<ul class="link-list hot-cities clean">
+				<li><a href="javascript:void(0)">北京热门二手车</a></li>
+				<li><a href="javascript:void(0)">北京热门二手车</a></li>
+				<li><a href="javascript:void(0)">北京热门二手车</a></li>
+				<li><a href="javascript:void(0)">北京热门二手车</a></li>
+				<li><a href="javascript:void(0)">北京热门二手车</a></li>
+				<li><a href="javascript:void(0)">北京热门二手车</a></li>
+				<li><a href="javascript:void(0)">北京热门二手车</a></li>
+				<li><a href="javascript:void(0)">北京热门二手车</a></li>
+				<li><a href="javascript:void(0)">北京热门二手车</a></li>
+				<li><a href="javascript:void(0)">北京热门二手车</a></li>
+				<li><a href="javascript:void(0)">北京热门二手车</a></li>
+				<li><a href="javascript:void(0)">北京热门二手车</a></li>
+			</ul>
+			<ul class="link-list service-center clean" style="display:none">
+				<li><a href="javascript:void(0)">全国交易市场查询</a></li>
+				<li><a href="javascript:void(0)">各地准入标准</a></li>
+				<li><a href="javascript:void(0)">保值率查询</a></li>
+				<li><a href="javascript:void(0)">入驻第一车网</a></li>
+			</ul>
+			<ul class="link-list iautos clean" style="display:none">
+				<li><a href="javascript:void(0)">关于我们</a></li>
+				<li><a href="javascript:void(0)">联系我们</a></li>
+				<li><a href="javascript:void(0)">加入我们</a></li>
+				<li><a href="javascript:void(0)">问题反馈</a></li>
+				<li><a href="javascript:void(0)">隐私保护规则</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="alphaMaskLayer" class="alpha-mask-layer" style="display:none"></div>
+	<div id="chooseStyleBox" class="choose-style-box" style="display:none">
+		<i class="choose-style-close"></i>
+		<div class="choose-style-wrapper">
+			<div class="choose-brand">
+				<h3 class="title">选择品牌</h3>
+				<ul class="brand-letters clean">
+					<li data-letter="a" class="active">A</li>
+					<li data-letter="b">B</li>
+					<li data-letter="c">C</li>
+					<li data-letter="d">D</li>
+					<li data-letter="f">F</li>
+					<li data-letter="g">G</li>
+					<li data-letter="b">H</li>
+					<li data-letter="c">J</li>
+					<li data-letter="d">K</li>
+					<li data-letter="f">L</li>
+					<li data-letter="g">M</li>
+					<li data-letter="b">N</li>
+					<li data-letter="c">O</li>
+					<li data-letter="d">Q</li>
+					<li data-letter="f">R</li>
+					<li data-letter="g">S</li>
+					<li data-letter="b">T</li>
+					<li data-letter="c">W</li>
+					<li data-letter="d">X</li>
+					<li data-letter="f">Y</li>
+					<li data-letter="g">Z</li>
+				</ul>
+				<div class="brand-lists-wrapper brand-a clean">
+					<h6 class="brand-letter">A</h6>
+					<ul class="brand-lists clean">
+						<li><div class="img"><img src="" width="100%" /></div><h6 class="brand-title">奥迪</h6></li>
+					</ul>
+				</div>
+				<div class="brand-lists-wrapper brand-b clean" style="display:none">
+					<h6 class="brand-letter">B</h6>
+					<ul class="brand-lists clean">
+						<li><div class="img"><img src="" width="100%" /></div><h6 class="brand-title">宝马</h6></li>
+					</ul>
+				</div>
+			</div>
+			<div class="choose-style" style="display:none">
+				<i class="choose-back-btn" data-box="choose-brand"></i>
+				<h3 class="title">选择车系</h3>
+				<div class="style-wrapper">
+					<h6 class="style-title">奥迪(一汽大众)</h6>
+					<ul class="style-list clean">
+						<li>奥迪A6L</li>
+					</ul>
+				</div>
+				<div class="style-wrapper">
+					<h6 class="style-title">奥迪</h6>
+					<ul class="style-list clean"><li>A4旅行版</li></ul>
+				</div>
+			</div>
+			<div class="choose-year" style="display:none">
+				<i class="choose-back-btn" data-box="choose-style"></i>
+				<h3 class="title">购买年份</h3>
+				<ul class="clean">
+					<li><span class="choose-year-text">2013</span></li>
+					<li><span class="choose-year-text">2012</span></li>
+					<li><span class="choose-year-text">2011</span></li>
+					<li><span class="choose-year-text">2010</span></li>
+					<li><span class="choose-year-text">2009</span></li>
+					<li><span class="choose-year-text">2008</span></li>
+					<li><span class="choose-year-text">2007</span></li>
+					<li><span class="choose-year-text">2006</span></li>
+					<li><span class="choose-year-text">2001</span></li>
+					<li><span class="choose-year-text">2000</span></li>
+				</ul>
+			</div>
+			<div class="choose-detail" style="display:none">
+				<i class="choose-back-btn" data-box="choose-year"></i>
+				<h3 class="title">选择车型款式</h3>
+				<ul class="detail-year clean"><li data-year="2013">2013款</li><li data-year="2012">2012款</li></ul>
+				<div class="detail-list-wrapper detail-2013">
+					<h6 class="detail-title">2013</h6>
+					<ul class="choose-detail-list clean">
+						<i class="detail-line"></i>
+						<li class="clean"><span class="text-left">1.4T  手动  30TFSI 标准型(国Ⅴ)</span><span class="text-right">￥24.98万</span></li>
+					</ul>
+				</div>
+				<div class="detail-list-wrapper detail-2012">
+					<h6 class="detail-title">2012</h6>
+					<ul class="choose-detail-list clean">
+						<i class="detail-line"></i>
+						<li class="clean"><span class="text-left">1.4T  手动  30TFSI 标准型(国Ⅴ)</span><span class="text-right">￥24.98万</span></li>
+						<li class="clean"><span class="text-left">1.4T  手动  30TFSI 标准型(国Ⅴ)</span><span class="text-right">￥24.98万</span></li>
+						<li class="clean"><span class="text-left">1.4T  手动  30TFSI 标准型(国Ⅴ)</span><span class="text-right">￥24.98万</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
