@@ -10,11 +10,11 @@ ul, ol, input[type=text], textarea, input[type=submit], input[type=button], butt
   padding: 0;
 }
 
-input[type=text], textarea, input[type=submit], input[type=button], button {
+input[type=text], textarea, input[type=submit], input[type=button], button, img {
   border: none;
 }
 
-.choose-style-box .choose-back-btn, .choose-style-close, .choose-brand .brand-letters li, .choose-brand .brand-lists li, .choose-style .style-list li, .choose-year span, .choose-detail li, .iautos-wrap .left-box .change, .iautos-wrap .left-box .address-close, .iautos-wrap .left-box .address-letters li, .iautos-wrap .iautos-banner-pager li, .iautos-wrap .select-text, .iautos-wrap .time-select li, .iautos-wrap .area-select-lists li {
+input[type=submit], input[type=button], button, .choose-style-box .choose-back-btn, .choose-style-close, .choose-brand .brand-letters li, .choose-brand .brand-lists li, .choose-style .style-list li, .choose-year span, .choose-detail li, .iautos-wrap .left-box .change, .iautos-wrap .left-box .address-close, .iautos-wrap .left-box .address-letters li, .iautos-wrap .iautos-banner-pager li, .iautos-wrap .select-text, .iautos-wrap .time-select li, .iautos-wrap .area-select-lists li {
   cursor: pointer;
 }
 
@@ -33,16 +33,12 @@ input[type=text], textarea, input[type=submit], input[type=button], button {
   clear: both;
 }
 
-.pointer, input[type=submit], input[type=button], button {
+.pointer {
   cursor: pointer;
 }
 
 ul, ol {
   list-style: none;
-}
-
-input[type=text], textarea, input[type=submit], input[type=button], button {
-  outline: none;
 }
 
 textarea {
@@ -120,17 +116,12 @@ a {
   outline: none;
 }
 
-.choose-style, .choose-year, .choose-detail, .choose-detail .choose-detail-list {
+.choose-style, .choose-year, .choose-detail, .choose-detail .choose-detail-list, .iautos-wrap .left-box .address, .iautos-wrap .mid-top, .iautos-wrap .iautos-banner, .iautos-wrap .iautos-banner-pager li, .iautos-wrap .block-title, .iautos-wrap .link-ico, .iautos-wrap .select-text, .iautos-wrap .choose-style-btn {
   position: relative;
 }
 
 .iautos-wrap .left-box .search-btn, .iautos-wrap .fast-ping .submit-btn, .iautos-wrap .expert-ping .search-btn a, .choose-style-box .title, .choose-brand .brand-letters li, .choose-brand .brand-letter, .choose-brand .brand-lists .brand-title, .choose-year li, .choose-detail .detail-year li, .iautos-wrap .left-box .address-letters li, .iautos-wrap .left-box .province-letter, .iautos-wrap .right-top .count, .iautos-wrap .right-top .most-concern, .iautos-wrap .right-mid .text, .iautos-wrap .area-select-item {
   text-align: center;
-}
-
-.iautos-wrap .expert-ping .search-btn a, .iautos-wrap .ask-list li a {
-  display: block;
-  height: 100%;
 }
 
 .iautos-wrap .fast-ping, .iautos-wrap .expert-ping, .iautos-wrap .expert-answer, .iautos-wrap .link {
@@ -145,7 +136,7 @@ a {
   font-size: 13px;
 }
 
-.iautos-wrap .select-tag, .choose-detail, .choose-detail .detail-title, .iautos-wrap .left-box, .iautos-wrap .left-box .nav-title, .iautos-wrap .left-box .address-letters li, .iautos-wrap .left-box .box-title, .iautos-wrap .left-box .province-title a, .iautos-wrap .left-box .tit, .iautos-wrap .mid-bottom li, .iautos-wrap .right-top .count, .iautos-wrap .right-top .detail, .iautos-wrap .block-title li, .iautos-wrap .block-title .explain, .iautos-wrap .more-link, .iautos-wrap .lists .tit, .iautos-wrap .expert-ping .fast-locate-tit, .iautos-wrap .time-select li, .iautos-wrap .area-select-item, .iautos-wrap .choose-style-btn, .iautos-wrap .ask-list li, .iautos-wrap .link-title {
+.iautos-wrap .select-tag, .choose-detail, .choose-detail .detail-title, .iautos-wrap .left-box, .iautos-wrap .left-box .nav-title, .iautos-wrap .left-box .address-letters li, .iautos-wrap .left-box .box-title, .iautos-wrap .left-box .province-letter, .iautos-wrap .left-box .province-title a, .iautos-wrap .left-box .tit, .iautos-wrap .mid-bottom li, .iautos-wrap .right-top .count, .iautos-wrap .right-top .detail, .iautos-wrap .block-title li, .iautos-wrap .block-title .explain, .iautos-wrap .more-link, .iautos-wrap .lists .tit, .iautos-wrap .expert-ping .fast-locate-tit, .iautos-wrap .time-select li, .iautos-wrap .area-select-title, .iautos-wrap .area-select-lists li, .iautos-wrap .choose-style-btn, .iautos-wrap .ask-list li, .iautos-wrap .link-title {
   font-size: 14px;
 }
 
@@ -410,7 +401,6 @@ a {
   color: #999;
 }
 .iautos-wrap .left-box .address {
-  position: relative;
   z-index: 1;
   margin-right: -5px;
   padding: 0 5px;
@@ -423,7 +413,7 @@ a {
   position: absolute;
   top: 24px;
   left: 0px;
-  width: 80px;
+  width: 81px;
   height: 3px;
   background-color: #fff;
   border-left: 1px solid #d6d6d6;
@@ -591,12 +581,10 @@ a {
   margin: 0 2%;
 }
 .iautos-wrap .mid-top {
-  position: relative;
   height: 285px;
   overflow: hidden;
 }
 .iautos-wrap .iautos-banner {
-  position: relative;
   height: 100%;
 }
 .iautos-wrap .iautos-banner li {
@@ -609,7 +597,6 @@ a {
   left: 43%;
 }
 .iautos-wrap .iautos-banner-pager li {
-  position: relative;
   width: 14px;
   height: 14px;
   margin: 0 4px;
@@ -710,7 +697,7 @@ a {
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#f8a922, endColorstr=#e7680b);
 }
 .iautos-wrap .right-mid .sou .ico {
-  background-position: -13px -4px;
+  background-position: -12px -4px;
 }
 .iautos-wrap .right-mid .wen {
   width: 40px;
@@ -748,7 +735,6 @@ a {
   height: 146px;
 }
 .iautos-wrap .block-title {
-  position: relative;
   line-height: 29px;
 }
 .iautos-wrap .block-title .nav {
@@ -784,13 +770,14 @@ a {
 }
 .iautos-wrap .link-ico {
   display: inline-block;
-  position: relative;
   width: 16px;
   height: 16px;
   margin-left: 6px;
   background-color: #b3b3b3;
   border-radius: 8px;
   vertical-align: -3px;
+  +vertical-align: 1px;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865474, M12=-0.7071067811865477, M21=0.7071067811865477, M22=0.7071067811865474, SizingMethod='auto expand')";
 }
 .iautos-wrap .link-ico:after {
   top: 5px;
@@ -939,6 +926,9 @@ a {
   padding-bottom: 10px;
   font-weight: normal;
 }
+.iautos-wrap .expert-ping .search-btn a {
+  display: block;
+}
 .iautos-wrap .expert-ping .fast-locate-tit {
   margin: 30px 0 7px;
   font-weight: normal;
@@ -968,7 +958,6 @@ a {
   color: #646464;
 }
 .iautos-wrap .select-text {
-  position: relative;
   line-height: 44px;
   color: #030203;
 }
@@ -1020,9 +1009,9 @@ a {
 }
 .iautos-wrap .choose-style-text {
   width: 60%;
+  +float: left;
 }
 .iautos-wrap .choose-style-btn {
-  position: relative;
   width: 26%;
   height: 100%;
   padding-left: 12px;
@@ -1057,7 +1046,10 @@ a {
   border-top: 1px dashed #ccc;
 }
 .iautos-wrap .ask-list li a {
+  display: block;
   color: #2b6dbe;
+  height: 72px\9;
+  overflow: hidden\9;
 }
 .iautos-wrap .link {
   height: 137px;

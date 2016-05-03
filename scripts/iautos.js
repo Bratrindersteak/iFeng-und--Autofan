@@ -11,6 +11,9 @@ $(document).ready(function() {
 	var swiperEvent = new SwiperEvent();
 	swiperEvent.liSwiperAuto('iautosBanner li', 'iautosBannerPager li', 3, 600);
 
+	// 厂商认证模块车源初始随机显示一个品牌.
+	randomConfirmCars('.brand-ico');
+
 	// 字母重复解决办法.
 	$('.normal-cities').each(function() {
 		var _letter = $(this).data('letter');
@@ -202,6 +205,22 @@ function activeTag($that) {
 	$that.siblings().removeClass('active');
 }
 
+// confirm cars brand random function.
+function randomConfirmCars(vater) {
+	var _randomNumber = Math.floor( Math.random() * 16 + 1 );
+
+	$(vater + _randomNumber).css({
+		'height': '66px',
+		'background-image': 'url(../images/brand-logo-hover.jpg)',
+		'border-top-width': '3px',
+		'border-color': '#f29600',
+		'border-bottom-color': '#fff'
+	});
+	$(vater + _randomNumber).siblings().css({
+		'border-bottom-color': '#f29600'
+	});
+}
+
 // text hidden effect function.
 var TextEffect = function() {
 	this.textEllipsis = function(name, row) {
@@ -255,4 +274,3 @@ var SwiperEvent = function() {
 		}, 3000);
 	}
 }
-

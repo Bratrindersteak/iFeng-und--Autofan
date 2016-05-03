@@ -38,6 +38,8 @@
 	-o-transform: rotate(#{$angle}deg);
 }
 
+$ie7-: '+';
+
 %float-left {
 	float: left;
 }

@@ -27,11 +27,11 @@
 			@extend %font-eighteen;
 		}
 		.address {
-			@extend %float-right;
-			position: relative;
 			z-index: 1;
 			margin-right: -5px;
 			padding: 0 5px;
+			@extend %float-right;
+			@extend %relative;
 		}
 		.local {
 			padding-right: 7px;
@@ -45,7 +45,7 @@
 			position: absolute;
 			top: 24px;
 			left: 0px;
-			width: 80px;
+			width: 81px;
 			height: 3px;
 			background-color: #fff;
 			border-left: 1px solid #d6d6d6;
@@ -159,6 +159,7 @@
 			font-weight: normal;
 			color: #999;
 			@extend %text-align;
+			@extend %font-fourteen;
 		}
 		.province-title {
 			line-height: 50px;
@@ -234,13 +235,13 @@
 		@extend %float-left;
 	}
 	.mid-top {
-		position: relative;
 		height: 285px;
 		overflow: hidden;
+		@extend %relative;
 	}
 	.iautos-banner {
-		position: relative;
 		height: 100%;
+		@extend %relative;
 		li {
 			width: 100%;
 			height: 285px;
@@ -252,12 +253,12 @@
 		bottom: 12px;
 		left: 43%;
 		li {
-			position: relative;
 			width: 14px;
 			height: 14px;
 			margin: 0 4px;
 			background-color: #0e1119;
 			border-radius: 7px;
+			@extend %relative;
 			@extend %float-left;
 			@extend %pointer;
 		}
@@ -379,7 +380,7 @@
 			@extend %radiu;
 			@include normalGradient(linear, top, #f8a922, #e7680b);
 			.ico {
-				background-position: -13px -4px;
+				background-position: -12px -4px;
 			}
 		}
 		.wen {
@@ -414,8 +415,8 @@
 	}
 
 	.block-title {
-		position: relative;
 		line-height: 29px;
+		@extend %relative;
 		.title {
 			@extend %float-left;
 			@extend %block-title;
@@ -467,13 +468,15 @@
 	}
 	.link-ico {
 		display: inline-block;
-		position: relative;
 		width: 16px;
 		height: 16px;
 		margin-left: 6px;
 		background-color: #b3b3b3;
 		border-radius: 8px;
 		vertical-align: -3px;
+		#{$ie7-}vertical-align: 1px;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865474, M12=-0.7071067811865477, M21=0.7071067811865477, M22=0.7071067811865474, SizingMethod='auto expand')";
+		@extend %relative;
 		&:after {
 			top: 5px;
 			left: 4px;
@@ -617,7 +620,7 @@
 		.search-btn {
 			@extend %margin-top-twenty;
 			a {
-				@extend %a-block;
+				display: block;
 				@extend %blue-btn;
 			}
 		}
@@ -664,9 +667,9 @@
 		}
 	}
 	.select-text {
-		position: relative;
 		line-height: 44px;
 		color: #030203;
+		@extend %relative;
 		@extend %pointer;
 		&:after {
 			top: 17px;
@@ -709,17 +712,18 @@
 		color: #787878;
 		@extend %float-left;
 		@extend %text-align;
-		@extend %font-fourteen;
 	}
 	.area-select-title {
 		line-height: 45px;
 		border-bottom: 1px dashed #e6e6e6;
 		font-weight: normal;
+		@extend %font-fourteen;
 	}
 	.area-select-lists {
 		padding: 13px 0;
 		li {
 			line-height: 26px;
+			@extend %font-fourteen;
 			@extend %pointer;
 			&:hover {
 				@extend %iautos-orange;
@@ -728,14 +732,15 @@
 	}
 	.choose-style-text {
 		width: 60%;
+		#{$ie7-}float: left;
 	}
 	.choose-style-btn {
-		position: relative;
 		width: 26%;
 		height: 100%;
 		padding-left: 12px;
 		background-color: #c8c8c8;
 		color: #fff;
+		@extend %relative;
 		@extend %float-right;
 		@extend %font-fourteen;
 		&:after {
@@ -765,8 +770,10 @@
 			border-top: 1px dashed #ccc;
 			@extend %font-fourteen;
 			a {
+				display: block;
 				color: #2b6dbe;
-				@extend %a-block;
+				height: 72px\9;
+				overflow: hidden\9;
 				&:hover {
 					@extend %iautos-orange;
 				}
@@ -818,4 +825,3 @@
 		}
 	}
 }
-

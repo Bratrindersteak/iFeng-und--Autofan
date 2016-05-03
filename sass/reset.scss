@@ -59,9 +59,12 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 input[type=text], textarea, input[type=submit], input[type=button], button {
-	outline: none;
 	@extend %fontFamily;
 	@extend %no-padding;
+	@extend %no-border;
+}
+
+img {
 	@extend %no-border;
 }
 
@@ -70,7 +73,7 @@ textarea {
 }
 
 input[type=submit], input[type=button], button {
-	@extend .pointer;
+	@extend %pointer;
 }
 
 option {
