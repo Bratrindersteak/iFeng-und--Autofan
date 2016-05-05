@@ -14,7 +14,7 @@ input[type=text], textarea, input[type=submit], input[type=button], button, img 
   border: none;
 }
 
-input[type=submit], input[type=button], button, .choose-style-box .choose-back-btn, .choose-style-close, .choose-brand .brand-letters li, .choose-brand .brand-lists li, .choose-style .style-list li, .choose-year span, .choose-detail li, .iautos-wrap .left-box .change, .iautos-wrap .left-box .address-close, .iautos-wrap .left-box .address-letters li, .iautos-wrap .iautos-banner-pager li, .iautos-wrap .select-text, .iautos-wrap .time-select li, .iautos-wrap .area-select-lists li {
+input[type=submit], input[type=button], button, .choose-style-box .choose-back-btn, .choose-style-close, .choose-brand .brand-letters li, .choose-brand .brand-lists li, .choose-style .style-list li, .choose-year span, .choose-detail li, .iautos-wrap .left-box .change, .iautos-wrap .left-box .address-close, .iautos-wrap .left-box .address-letters li, .iautos-wrap .left-box .search-list li, .iautos-wrap .iautos-banner-pager li, .iautos-wrap .select-text, .iautos-wrap .time-select li, .iautos-wrap .area-select-lists li {
   cursor: pointer;
 }
 
@@ -39,6 +39,10 @@ input[type=submit], input[type=button], button, .choose-style-box .choose-back-b
 
 ul, ol {
   list-style: none;
+}
+
+input[type=text] {
+  outline: none;
 }
 
 textarea {
@@ -116,7 +120,7 @@ a {
   outline: none;
 }
 
-.choose-style, .choose-year, .choose-detail, .choose-detail .choose-detail-list, .iautos-wrap .left-box .address, .iautos-wrap .mid-top, .iautos-wrap .iautos-banner, .iautos-wrap .iautos-banner-pager li, .iautos-wrap .block-title, .iautos-wrap .link-ico, .iautos-wrap .select-text, .iautos-wrap .choose-style-btn {
+.choose-style, .choose-year, .choose-detail, .choose-detail .choose-detail-list, .iautos-wrap .left-box .address, .iautos-wrap .left-box .search-form, .iautos-wrap .mid-top, .iautos-wrap .iautos-banner, .iautos-wrap .iautos-banner-pager li, .iautos-wrap .block-title, .iautos-wrap .link-ico, .iautos-wrap .select-text, .iautos-wrap .choose-style-btn {
   position: relative;
 }
 
@@ -136,7 +140,7 @@ a {
   font-size: 13px;
 }
 
-.iautos-wrap .select-tag, .choose-detail, .choose-detail .detail-title, .iautos-wrap .left-box, .iautos-wrap .left-box .nav-title, .iautos-wrap .left-box .address-letters li, .iautos-wrap .left-box .box-title, .iautos-wrap .left-box .province-letter, .iautos-wrap .left-box .province-title a, .iautos-wrap .left-box .tit, .iautos-wrap .mid-bottom li, .iautos-wrap .right-top .count, .iautos-wrap .right-top .detail, .iautos-wrap .block-title li, .iautos-wrap .block-title .explain, .iautos-wrap .more-link, .iautos-wrap .lists .tit, .iautos-wrap .expert-ping .fast-locate-tit, .iautos-wrap .time-select li, .iautos-wrap .area-select-title, .iautos-wrap .area-select-lists li, .iautos-wrap .choose-style-btn, .iautos-wrap .ask-list li, .iautos-wrap .link-title {
+.iautos-wrap .select-tag, .choose-detail, .choose-detail .detail-title, .iautos-wrap .left-box, .iautos-wrap .left-box .nav-title, .iautos-wrap .left-box .address-letters li, .iautos-wrap .left-box .box-title, .iautos-wrap .left-box .province-letter, .iautos-wrap .left-box .province-title a, .iautos-wrap .left-box .tit, .iautos-wrap .left-box .search-list li, .iautos-wrap .mid-bottom li, .iautos-wrap .right-top .count, .iautos-wrap .right-top .detail, .iautos-wrap .block-title li, .iautos-wrap .block-title .explain, .iautos-wrap .more-link, .iautos-wrap .lists .tit, .iautos-wrap .expert-ping .fast-locate-tit, .iautos-wrap .time-select li, .iautos-wrap .area-select-title, .iautos-wrap .area-select-lists li, .iautos-wrap .choose-style-btn, .iautos-wrap .ask-list li, .iautos-wrap .link-title {
   font-size: 14px;
 }
 
@@ -168,7 +172,7 @@ a {
   border-radius: 5px;
 }
 
-.choose-brand .brand-letters li:hover, .choose-brand .brand-letters .active, .choose-brand .brand-lists li:hover, .choose-style .style-list li:hover, .choose-year span:hover, .choose-detail li:hover, .iautos-wrap .left-box .change, .iautos-wrap .left-box .address-boxes a:hover, .iautos-wrap .left-box .list a:hover, .iautos-wrap .mid-bottom li a:hover, .iautos-wrap .mid-bottom .point, .iautos-wrap .right-mid a:hover, .iautos-wrap .block-title .nav .active span, .iautos-wrap .more-link:hover, .iautos-wrap .fast-ping .tit, .iautos-wrap .expert-ping .tit, .iautos-wrap .expert-ping .fast-locate-list a:hover, .iautos-wrap .time-select li:hover, .iautos-wrap .area-select-lists li:hover, .iautos-wrap .ask-list li a:hover, .iautos-wrap .link-nav .active .n, .iautos-wrap .link-list a:hover {
+.choose-brand .brand-letters li:hover, .choose-brand .brand-letters .active, .choose-brand .brand-lists li:hover, .choose-style .style-list li:hover, .choose-year span:hover, .choose-detail li:hover, .iautos-wrap .left-box .change, .iautos-wrap .left-box .address-boxes a:hover, .iautos-wrap .left-box .list a:hover, .iautos-wrap .left-box .search-list li:hover, .iautos-wrap .mid-bottom li a:hover, .iautos-wrap .mid-bottom .point, .iautos-wrap .right-mid a:hover, .iautos-wrap .block-title .nav .active span, .iautos-wrap .more-link:hover, .iautos-wrap .fast-ping .tit, .iautos-wrap .expert-ping .tit, .iautos-wrap .expert-ping .fast-locate-list a:hover, .iautos-wrap .time-select li:hover, .iautos-wrap .area-select-lists li:hover, .iautos-wrap .ask-list li a:hover, .iautos-wrap .link-nav .active .n, .iautos-wrap .link-list a:hover {
   color: #f29600;
 }
 
@@ -576,6 +580,23 @@ a {
 .iautos-wrap .left-box .search-btn {
   width: 34%;
 }
+.iautos-wrap .left-box .search-list {
+  position: absolute;
+  top: 37px;
+  left: 0;
+  width: 60.9%;
+  padding: 8px 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top-color: #fff;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  z-index: 2;
+}
+.iautos-wrap .left-box .search-list li {
+  line-height: 36px;
+  padding-left: 10px;
+}
 .iautos-wrap .mid-box {
   width: 49.5%;
   margin: 0 2%;
@@ -682,8 +703,8 @@ a {
   margin: 0 auto;
   padding-top: 11px;
   height: 22px;
-  background: url(../images/iautos-ico.png) no-repeat;
-  _background-image: url(../images/iautos-ico-ie.png);
+  background: url(../../images/iautos-ico.png) no-repeat;
+  _background-image: url(../../images/iautos-ico-ie.png);
 }
 .iautos-wrap .right-mid .sou {
   width: 40px;
@@ -818,8 +839,8 @@ a {
   right: 0;
   width: 53px;
   height: 53px;
-  background: url(../images/neun-comfirm.png) no-repeat;
-  _background-image: url(../images/neun-comfirm-ie.png);
+  background: url(../../images/neun-comfirm.png) no-repeat;
+  _background-image: url(../../images/neun-comfirm-ie.png);
 }
 .iautos-wrap .lists .info {
   padding: 20px 8px 0;
@@ -850,7 +871,7 @@ a {
 .iautos-wrap .brand-ico li {
   width: 12.29%;
   height: 68px;
-  background-image: url(../images/brand-logo.jpg);
+  background-image: url(../../images/brand-logo.jpg);
   background-repeat: no-repeat;
   border: 1px solid #d6d6d6;
 }

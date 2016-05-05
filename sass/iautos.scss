@@ -208,6 +208,7 @@
 			}
 		}
 		.search-form {
+			@extend %relative;
 			@extend %margin-top-twenty;
 		}
 		.search-text {
@@ -226,6 +227,28 @@
 			width: 34%;	
 			@extend %float-right;
 			@extend %blue-btn;
+		}
+		.search-list {
+			position: absolute;
+			top: 37px;
+			left: 0;
+			width: 60.9%;
+			padding: 8px 0;
+			background-color: #fff;
+			border: 1px solid #ccc;
+			border-top-color: #fff;
+			border-bottom-left-radius: 3px;
+			border-bottom-right-radius: 3px;
+			z-index: 2;
+			li {
+				line-height: 36px;
+				padding-left: 10px;
+				@extend %font-fourteen;
+				@extend %pointer;
+				&:hover {
+					@extend %iautos-orange;
+				}
+			}
 		}
 	}
 	.mid-box {
@@ -370,8 +393,8 @@
 			margin: 0 auto;
 			padding-top: 11px;
 			height: 22px;
-			background: url(../images/iautos-ico.png) no-repeat;
-			_background-image: url(../images/iautos-ico-ie.png);
+			background: url(#{$img-prefix}images/iautos-ico.png) no-repeat;
+			_background-image: url(#{$img-prefix}images/iautos-ico-ie.png);
 		}
 		.sou {
 			width: 40px;
@@ -523,8 +546,8 @@
 			right: 0;
 			width: 53px;
 			height: 53px;
-			background: url(../images/neun-comfirm.png) no-repeat;
-			_background-image: url(../images/neun-comfirm-ie.png);
+			background: url(#{$img-prefix}images/neun-comfirm.png) no-repeat;
+			_background-image: url(#{$img-prefix}images/neun-comfirm-ie.png);
 		}
 		.info {
 			padding: 20px 8px 0;
@@ -565,7 +588,7 @@
 		li {
 			width: 12.29%;
 			height: 68px;
-			background-image: url(../images/brand-logo.jpg);
+			background-image: url(#{$img-prefix}images/brand-logo.jpg);
 			background-repeat: no-repeat;
 			border: 1px solid #d6d6d6;
 			@extend %float-left;

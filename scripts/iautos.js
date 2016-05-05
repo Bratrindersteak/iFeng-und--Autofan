@@ -27,6 +27,33 @@ $(document).ready(function() {
 	// 初始灰层的高度值.
 	$('#alphaMaskLayer').height( $(document).height() );
 
+	// 选车输入框焦点事件
+	$('.search-text').focus(function() {
+		$(this).css({
+			'border-bottom-left-radius': '0px',
+			'border-bottom-right-radius': '0px'
+		});
+		$('.search-list').show();
+	});
+
+	$('.search-text').blur(function() {
+		var $that = $(this);
+		
+		var blurEvent = setTimeout(function() {
+			$that.css({
+				'border-bottom-left-radius': '3px',
+				'border-bottom-right-radius': '3px'
+			});
+			$('.search-list').hide();
+		}, 100);
+	});
+
+	$('.search-list li').on('click', function() {
+		var _text = $(this).text();
+
+		$('.search-text').val( _text );
+	});
+
 	$('.link-title').hover(function() {
 		var $that = $(this);
 
