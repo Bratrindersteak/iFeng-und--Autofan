@@ -190,6 +190,16 @@ $(document).ready(function() {
 		$('.brand-' + _letter).siblings('.brand-lists-wrapper').hide();
 	});
 
+	$('.brand-lists li').hover(function() {
+		$(this).find('.img').css({
+			'background-image': 'url(../../images/car-logo.jpg)'
+		});
+	}, function() {
+		$(this).find('.img').css({
+			'background-image': 'url(../../images/car-logo-hover.jpg)'
+		});
+	});
+
 	$('.brand-lists li').on('click', function() {
 		$('.choose-style').show();
 		$('.choose-style').siblings().hide();

@@ -213,7 +213,7 @@
 			@extend %margin-top-twenty;
 		}
 		.search-text {
-			width: 56%;
+			width: 62%;
 			height: 36px;
 			line-height: 36px;
 			padding-left: 10px;
@@ -756,6 +756,7 @@
 	}
 	.choose-style-text {
 		width: 60%;
+		height: 100%;
 		#{$ie7-}float: left;
 	}
 	.choose-style-btn {

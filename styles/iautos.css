@@ -172,7 +172,7 @@ a {
   border-radius: 5px;
 }
 
-.choose-brand .brand-letters li:hover, .choose-brand .brand-letters .active, .choose-brand .brand-lists li:hover, .choose-style .style-list li:hover, .choose-year span:hover, .choose-detail li:hover, .iautos-wrap .left-box .change, .iautos-wrap .left-box .address-boxes a:hover, .iautos-wrap .left-box .list a:hover, .iautos-wrap .left-box .search-list li:hover, .iautos-wrap .mid-bottom li a:hover, .iautos-wrap .mid-bottom .point, .iautos-wrap .right-mid a:hover, .iautos-wrap .block-title .nav .active span, .iautos-wrap .more-link:hover, .iautos-wrap .fast-ping .tit, .iautos-wrap .expert-ping .tit, .iautos-wrap .expert-ping .fast-locate-list a:hover, .iautos-wrap .time-select li:hover, .iautos-wrap .area-select-lists li:hover, .iautos-wrap .ask-list li a:hover, .iautos-wrap .link-nav .active .n, .iautos-wrap .link-list a:hover {
+.choose-brand .brand-letters li:hover, .choose-brand .brand-letters .active, .choose-style .style-list li:hover, .choose-year span:hover, .choose-detail li:hover, .iautos-wrap .left-box .change, .iautos-wrap .left-box .address-boxes a:hover, .iautos-wrap .left-box .list a:hover, .iautos-wrap .left-box .search-list li:hover, .iautos-wrap .mid-bottom li a:hover, .iautos-wrap .mid-bottom .point, .iautos-wrap .right-mid a:hover, .iautos-wrap .block-title .nav .active span, .iautos-wrap .more-link:hover, .iautos-wrap .fast-ping .tit, .iautos-wrap .expert-ping .tit, .iautos-wrap .expert-ping .fast-locate-list a:hover, .iautos-wrap .time-select li:hover, .iautos-wrap .area-select-lists li:hover, .iautos-wrap .ask-list li a:hover, .iautos-wrap .link-nav .active .n, .iautos-wrap .link-list a:hover {
   color: #f29600;
 }
 
@@ -326,11 +326,14 @@ a {
   width: 108px;
   height: 86px;
 }
+.choose-brand .brand-lists li:hover {
+  background-color: #fafafa;
+}
 .choose-brand .brand-lists .img {
   width: 50px;
   height: 50px;
   margin: 1px auto 10px;
-  background: url(../images/car-logo-hover.jpg) no-repeat;
+  background: url(../../images/car-logo-hover.jpg) no-repeat;
   background-size: 100%;
 }
 .choose-brand .brand-lists .img:hover {
@@ -979,7 +982,7 @@ a {
   color: #333;
 }
 .iautos-wrap .left-box .search-text {
-  width: 56%;
+  width: 62%;
   height: 36px;
   line-height: 36px;
   padding-left: 10px;
@@ -1443,6 +1446,7 @@ a {
 }
 .iautos-wrap .choose-style-text {
   width: 60%;
+  height: 100%;
   +float: left;
 }
 .iautos-wrap .choose-style-btn {
