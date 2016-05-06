@@ -121,6 +121,7 @@
 		@extend %radiu;
 	}
 	.brand-lists {
+		width: 96%;
 		margin-bottom: 10px;
 		@extend %float-left;
 		li {
@@ -136,12 +137,151 @@
 			width: 50px;
 			height: 50px;
 			margin: 1px auto 10px;
+			background: url(../images/car-logo-hover.jpg) no-repeat;
+			background-size: 100%;
+			&:hover {
+				background-image: url(#{$img-prefix}images/car-logo.jpg);
+			}
 		}
 		.brand-title {
 			@extend %text-align;
 			@extend %font-twelve;
 			@extend %font-normal;
 		}
+		.logo-aodi{background-position:0 0;}
+		.logo-asidunmading{background-position:0 -50px;}
+		.logo-aerfaluomiou{background-position:0 -100px;}
+		.logo-acschnitzer{background-position:0 -150px;}
+		.logo-baoma{background-position:0 -200px;}
+		.logo-benchi{background-position:0 -250px;}
+		.logo-bieke{background-position:0 -300px;}
+		.logo-bentian{background-position:0 -350px;}
+		.logo-baoshijie{background-position:0 -400px;}
+		.logo-biyadi{background-position:0 -450px;}
+		.logo-biaozhi{background-position:0 -500px;}
+		.logo-benteng{background-position:0 -550px;}
+		.logo-binli{background-position:0 -600px;}
+		.logo-beiqizhizao{background-position:0 -650px;}
+		.logo-beijingqiche{background-position:0 -700px;}
+		.logo-baojun{background-position:0 -750px;}
+		.logo-babosi{background-position:0 -800px;}
+		.logo-baolong{background-position:0 -850px;}
+		.logo-bujiadi{background-position:0 -900px;}
+		.logo-beiqihuansu{background-position:0 -950px;}
+		.logo-changan{background-position:0 -1000px;}
+		.logo-changcheng{background-position:0 -1050px;}
+		.logo-changfeng{background-position:0 -1100px;}
+		.logo-changhe{background-position:0 -1150px;}
+		.logo-chuanqi{background-position:0 -1200px;}
+		.logo-dazhong{background-position:0 -1250px;}
+		.logo-dongfeng{background-position:0 -1300px;}
+		.logo-dongnan{background-position:0 -1350px;}
+		.logo-dihao{background-position:0 -1400px;}
+		.logo-daoqi{background-position:0 -1450px;}
+		.logo-dayu{background-position:0 -1500px;}
+		.logo-dafa{background-position:0 -1550px;}
+		.logo-fengtian{background-position:0 -1600px;}
+		.logo-fute{background-position:0 -1650px;}
+		.logo-feiyate{background-position:0 -1700px;}
+		.logo-falali{background-position:0 -1750px;}
+		.logo-futian{background-position:0 -1800px;}
+		.logo-fudi{background-position:0 -1850px;}
+		.logo-fengtianscion{background-position:0 -1900px;}
+		.logo-feisike{background-position:0 -1950px;}
+		.logo-gmc{background-position:0 -2000px;}
+		.logo-guangqi{background-position:0 -2050px;}
+		.logo-guanzhi{background-position:0 -2100px;}
+		.logo-haima{background-position:0 -2150px;}
+		.logo-hafei{background-position:0 -2200px;}
+		.logo-huatai{background-position:0 -2250px;}
+		.logo-hanma{background-position:0 -2300px;}
+		.logo-huapu{background-position:0 -2350px;}
+		.logo-huanghai{background-position:0 -2400px;}
+		.logo-hongqi{background-position:0 -2450px;}
+		.logo-huizhong{background-position:0 -2500px;}
+		.logo-heibao{background-position:0 -2550px;}
+		.logo-haige{background-position:0 -2600px;}
+		.logo-jianghuai{background-position:0 -2650px;}
+		.logo-jili{background-position:0 -2700px;}
+		.logo-jipu{background-position:0 -2750px;}
+		.logo-jinbei{background-position:0 -2800px;}
+		.logo-jiebao{background-position:0 -2850px;}
+		.logo-jiangling{background-position:0 -2900px;}
+		.logo-jiao{background-position:0 -2950px;}
+		.logo-jiangnan{background-position:0 -3000px;}
+		.logo-kaidilake{background-position:0 -3050px;}
+		.logo-kelaisile{background-position:0 -3100px;}
+		.logo-kairui{background-position:0 -3150px;}
+		.logo-kawei{background-position:0 -3200px;}
+		.logo-kenisaige{background-position:0 -6650px;}
+		.logo-luhu{background-position:0 -3250px;}
+		.logo-leikesasi{background-position:0 -3300px;}
+		.logo-lingmu{background-position:0 -3350px;}
+		.logo-leinuo{background-position:0 -3400px;}
+		.logo-lanbojini{background-position:0 -3450px;}
+		.logo-lifan{background-position:0 -3500px;}
+		.logo-laosilaisi{background-position:0 -3550px;}
+		.logo-lufeng{background-position:0 -3600px;}
+		.logo-linken{background-position:0 -3650px;}
+		.logo-lianhua{background-position:0 -3700px;}
+		.logo-lutesi{background-position:0 -3750px;}
+		.logo-luofu{background-position:0 -3800px;}
+		.logo-sanxing{background-position:0 -5250px;}
+		.logo-mazida{background-position:0 -3850px;}
+		.logo-mini{background-position:0 -3900px;}
+		.logo-mingjue{background-position:0 -3950px;}
+		.logo-mashaladi{background-position:0 -4000px;}
+		.logo-meiya{background-position:0 -4050px;}
+		.logo-maibahe{background-position:0 -4100px;}
+		.logo-maxusdatong{background-position:0 -4150px;}
+		.logo-mogen{background-position:0 -4200px;}
+		.logo-maikailun{background-position:0 -4250px;}
+		.logo-nazhijie{background-position:0 -4300px;}
+		.logo-nanqi{background-position:0 -4350px;}
+		.logo-oubao{background-position:0 -4400px;}
+		.logo-ouge{background-position:0 -4450px;}
+		.logo-qiya{background-position:0 -4500px;}
+		.logo-qirui{background-position:0 -4550px;}
+		.logo-qingling{background-position:0 -4600px;}
+		.logo-richan{background-position:0 -4650px;}
+		.logo-rongwei{background-position:0 -4700px;}
+		.logo-ruiqi{background-position:0 -4750px;}
+		.logo-sikeda{background-position:0 -4800px;}
+		.logo-sanling{background-position:0 -4850px;}
+		.logo-sibalu{background-position:0 -4900px;}
+		.logo-smart{background-position:0 -4950px;}
+		.logo-shuanghuan{background-position:0 -5000px;}
+		.logo-shuanglong{background-position:0 -5050px;}
+		.logo-sabo{background-position:0 -5100px;}
+		.logo-shijue{background-position:0 -5200px;}
+		.logo-saibao{background-position:0 -5050px;}
+		.logo-tianjinyiqi{background-position:0 -5300px;}
+		.logo-tianma{background-position:0 -5350px;}
+		.logo-tesila{background-position:0 -5500px;}
+		.logo-tongbao{background-position:0 -5400px;}
+		.logo-tongtian{background-position:0 -5450px;}
+		.logo-wuling{background-position:0 -5550px;}
+		.logo-woerwo{background-position:0 -5600px;}
+		.logo-weilin{background-position:0 -5650px;}
+		.logo-wushiling{background-position:0 -5700px;}
+		.logo-wanfeng{background-position:0 -5750px;}
+		.logo-xiandai{background-position:0 -5800px;}
+		.logo-xuefolan{background-position:0 -5850px;}
+		.logo-xuetielong{background-position:0 -5900px;}
+		.logo-xiyate{background-position:0 -6000px;}
+		.logo-xiamenjinlong{background-position:0 -5950px;}
+		.logo-xinkai{background-position:0 -6050px;}
+		.logo-yingfeinidi{background-position:0 -6100px;}
+		.logo-yiweike{background-position:0 -6150px;}
+		.logo-yiqi{background-position:0 -6200px;}
+		.logo-yinglun{background-position:0 -6250px;}
+		.logo-yongyuanqiche{background-position:0 -6300px;}
+		.logo-yunque{background-position:0 -6350px;}
+		.logo-zhongshun{background-position:0 -6550px;}
+		.logo-zhonghua{background-position:0 -6400px;}
+		.logo-zhongtai{background-position:0 -6450px;}
+		.logo-zhongxing{background-position:0 -6500px;}
+		.logo-zhongou{background-position:0 -6600px;}
 	}
 }
 .choose-style {

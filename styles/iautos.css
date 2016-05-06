@@ -132,7 +132,7 @@ a {
   border: 1px solid #e6e6e6;
 }
 
-.choose-brand .brand-letter, .choose-brand .brand-lists .brand-title, .choose-style .style-list li, .iautos-wrap .left-box .search-text, .iautos-wrap .right-top .most-concern, .iautos-wrap .lists .bottom, .iautos-wrap .lists .tags, .iautos-wrap .expert-ping .fast-locate-list li, .iautos-wrap .link-list li {
+.choose-brand .brand-letter, .choose-brand .brand-lists .brand-title, .choose-style .style-list li, .iautos-wrap .left-box .search-text, .iautos-wrap .left-box .search-list li, .iautos-wrap .right-top .most-concern, .iautos-wrap .lists .bottom, .iautos-wrap .lists .tags, .iautos-wrap .expert-ping .fast-locate-list li, .iautos-wrap .link-list li {
   font-size: 12px;
 }
 
@@ -140,7 +140,7 @@ a {
   font-size: 13px;
 }
 
-.iautos-wrap .select-tag, .choose-detail, .choose-detail .detail-title, .iautos-wrap .left-box, .iautos-wrap .left-box .nav-title, .iautos-wrap .left-box .address-letters li, .iautos-wrap .left-box .box-title, .iautos-wrap .left-box .province-letter, .iautos-wrap .left-box .province-title a, .iautos-wrap .left-box .tit, .iautos-wrap .left-box .search-list li, .iautos-wrap .mid-bottom li, .iautos-wrap .right-top .count, .iautos-wrap .right-top .detail, .iautos-wrap .block-title li, .iautos-wrap .block-title .explain, .iautos-wrap .more-link, .iautos-wrap .lists .tit, .iautos-wrap .expert-ping .fast-locate-tit, .iautos-wrap .time-select li, .iautos-wrap .area-select-title, .iautos-wrap .area-select-lists li, .iautos-wrap .choose-style-btn, .iautos-wrap .ask-list li, .iautos-wrap .link-title {
+.iautos-wrap .select-tag, .choose-detail, .choose-detail .detail-title, .iautos-wrap .left-box, .iautos-wrap .left-box .nav-title, .iautos-wrap .left-box .address-letters li, .iautos-wrap .left-box .box-title, .iautos-wrap .left-box .province-letter, .iautos-wrap .left-box .province-title a, .iautos-wrap .left-box .tit, .iautos-wrap .mid-bottom li, .iautos-wrap .right-top .count, .iautos-wrap .right-top .detail, .iautos-wrap .block-title li, .iautos-wrap .block-title .explain, .iautos-wrap .more-link, .iautos-wrap .lists .tit, .iautos-wrap .expert-ping .fast-locate-tit, .iautos-wrap .time-select li, .iautos-wrap .area-select-title, .iautos-wrap .area-select-lists li, .iautos-wrap .choose-style-btn, .iautos-wrap .ask-list li, .iautos-wrap .link-title {
   font-size: 14px;
 }
 
@@ -319,6 +319,7 @@ a {
   background-color: #ebebeb;
 }
 .choose-brand .brand-lists {
+  width: 96%;
   margin-bottom: 10px;
 }
 .choose-brand .brand-lists li {
@@ -329,6 +330,413 @@ a {
   width: 50px;
   height: 50px;
   margin: 1px auto 10px;
+  background: url(../images/car-logo-hover.jpg) no-repeat;
+  background-size: 100%;
+}
+.choose-brand .brand-lists .img:hover {
+  background-image: url(../../images/car-logo.jpg);
+}
+.choose-brand .brand-lists .logo-aodi {
+  background-position: 0 0;
+}
+.choose-brand .brand-lists .logo-asidunmading {
+  background-position: 0 -50px;
+}
+.choose-brand .brand-lists .logo-aerfaluomiou {
+  background-position: 0 -100px;
+}
+.choose-brand .brand-lists .logo-acschnitzer {
+  background-position: 0 -150px;
+}
+.choose-brand .brand-lists .logo-baoma {
+  background-position: 0 -200px;
+}
+.choose-brand .brand-lists .logo-benchi {
+  background-position: 0 -250px;
+}
+.choose-brand .brand-lists .logo-bieke {
+  background-position: 0 -300px;
+}
+.choose-brand .brand-lists .logo-bentian {
+  background-position: 0 -350px;
+}
+.choose-brand .brand-lists .logo-baoshijie {
+  background-position: 0 -400px;
+}
+.choose-brand .brand-lists .logo-biyadi {
+  background-position: 0 -450px;
+}
+.choose-brand .brand-lists .logo-biaozhi {
+  background-position: 0 -500px;
+}
+.choose-brand .brand-lists .logo-benteng {
+  background-position: 0 -550px;
+}
+.choose-brand .brand-lists .logo-binli {
+  background-position: 0 -600px;
+}
+.choose-brand .brand-lists .logo-beiqizhizao {
+  background-position: 0 -650px;
+}
+.choose-brand .brand-lists .logo-beijingqiche {
+  background-position: 0 -700px;
+}
+.choose-brand .brand-lists .logo-baojun {
+  background-position: 0 -750px;
+}
+.choose-brand .brand-lists .logo-babosi {
+  background-position: 0 -800px;
+}
+.choose-brand .brand-lists .logo-baolong {
+  background-position: 0 -850px;
+}
+.choose-brand .brand-lists .logo-bujiadi {
+  background-position: 0 -900px;
+}
+.choose-brand .brand-lists .logo-beiqihuansu {
+  background-position: 0 -950px;
+}
+.choose-brand .brand-lists .logo-changan {
+  background-position: 0 -1000px;
+}
+.choose-brand .brand-lists .logo-changcheng {
+  background-position: 0 -1050px;
+}
+.choose-brand .brand-lists .logo-changfeng {
+  background-position: 0 -1100px;
+}
+.choose-brand .brand-lists .logo-changhe {
+  background-position: 0 -1150px;
+}
+.choose-brand .brand-lists .logo-chuanqi {
+  background-position: 0 -1200px;
+}
+.choose-brand .brand-lists .logo-dazhong {
+  background-position: 0 -1250px;
+}
+.choose-brand .brand-lists .logo-dongfeng {
+  background-position: 0 -1300px;
+}
+.choose-brand .brand-lists .logo-dongnan {
+  background-position: 0 -1350px;
+}
+.choose-brand .brand-lists .logo-dihao {
+  background-position: 0 -1400px;
+}
+.choose-brand .brand-lists .logo-daoqi {
+  background-position: 0 -1450px;
+}
+.choose-brand .brand-lists .logo-dayu {
+  background-position: 0 -1500px;
+}
+.choose-brand .brand-lists .logo-dafa {
+  background-position: 0 -1550px;
+}
+.choose-brand .brand-lists .logo-fengtian {
+  background-position: 0 -1600px;
+}
+.choose-brand .brand-lists .logo-fute {
+  background-position: 0 -1650px;
+}
+.choose-brand .brand-lists .logo-feiyate {
+  background-position: 0 -1700px;
+}
+.choose-brand .brand-lists .logo-falali {
+  background-position: 0 -1750px;
+}
+.choose-brand .brand-lists .logo-futian {
+  background-position: 0 -1800px;
+}
+.choose-brand .brand-lists .logo-fudi {
+  background-position: 0 -1850px;
+}
+.choose-brand .brand-lists .logo-fengtianscion {
+  background-position: 0 -1900px;
+}
+.choose-brand .brand-lists .logo-feisike {
+  background-position: 0 -1950px;
+}
+.choose-brand .brand-lists .logo-gmc {
+  background-position: 0 -2000px;
+}
+.choose-brand .brand-lists .logo-guangqi {
+  background-position: 0 -2050px;
+}
+.choose-brand .brand-lists .logo-guanzhi {
+  background-position: 0 -2100px;
+}
+.choose-brand .brand-lists .logo-haima {
+  background-position: 0 -2150px;
+}
+.choose-brand .brand-lists .logo-hafei {
+  background-position: 0 -2200px;
+}
+.choose-brand .brand-lists .logo-huatai {
+  background-position: 0 -2250px;
+}
+.choose-brand .brand-lists .logo-hanma {
+  background-position: 0 -2300px;
+}
+.choose-brand .brand-lists .logo-huapu {
+  background-position: 0 -2350px;
+}
+.choose-brand .brand-lists .logo-huanghai {
+  background-position: 0 -2400px;
+}
+.choose-brand .brand-lists .logo-hongqi {
+  background-position: 0 -2450px;
+}
+.choose-brand .brand-lists .logo-huizhong {
+  background-position: 0 -2500px;
+}
+.choose-brand .brand-lists .logo-heibao {
+  background-position: 0 -2550px;
+}
+.choose-brand .brand-lists .logo-haige {
+  background-position: 0 -2600px;
+}
+.choose-brand .brand-lists .logo-jianghuai {
+  background-position: 0 -2650px;
+}
+.choose-brand .brand-lists .logo-jili {
+  background-position: 0 -2700px;
+}
+.choose-brand .brand-lists .logo-jipu {
+  background-position: 0 -2750px;
+}
+.choose-brand .brand-lists .logo-jinbei {
+  background-position: 0 -2800px;
+}
+.choose-brand .brand-lists .logo-jiebao {
+  background-position: 0 -2850px;
+}
+.choose-brand .brand-lists .logo-jiangling {
+  background-position: 0 -2900px;
+}
+.choose-brand .brand-lists .logo-jiao {
+  background-position: 0 -2950px;
+}
+.choose-brand .brand-lists .logo-jiangnan {
+  background-position: 0 -3000px;
+}
+.choose-brand .brand-lists .logo-kaidilake {
+  background-position: 0 -3050px;
+}
+.choose-brand .brand-lists .logo-kelaisile {
+  background-position: 0 -3100px;
+}
+.choose-brand .brand-lists .logo-kairui {
+  background-position: 0 -3150px;
+}
+.choose-brand .brand-lists .logo-kawei {
+  background-position: 0 -3200px;
+}
+.choose-brand .brand-lists .logo-kenisaige {
+  background-position: 0 -6650px;
+}
+.choose-brand .brand-lists .logo-luhu {
+  background-position: 0 -3250px;
+}
+.choose-brand .brand-lists .logo-leikesasi {
+  background-position: 0 -3300px;
+}
+.choose-brand .brand-lists .logo-lingmu {
+  background-position: 0 -3350px;
+}
+.choose-brand .brand-lists .logo-leinuo {
+  background-position: 0 -3400px;
+}
+.choose-brand .brand-lists .logo-lanbojini {
+  background-position: 0 -3450px;
+}
+.choose-brand .brand-lists .logo-lifan {
+  background-position: 0 -3500px;
+}
+.choose-brand .brand-lists .logo-laosilaisi {
+  background-position: 0 -3550px;
+}
+.choose-brand .brand-lists .logo-lufeng {
+  background-position: 0 -3600px;
+}
+.choose-brand .brand-lists .logo-linken {
+  background-position: 0 -3650px;
+}
+.choose-brand .brand-lists .logo-lianhua {
+  background-position: 0 -3700px;
+}
+.choose-brand .brand-lists .logo-lutesi {
+  background-position: 0 -3750px;
+}
+.choose-brand .brand-lists .logo-luofu {
+  background-position: 0 -3800px;
+}
+.choose-brand .brand-lists .logo-sanxing {
+  background-position: 0 -5250px;
+}
+.choose-brand .brand-lists .logo-mazida {
+  background-position: 0 -3850px;
+}
+.choose-brand .brand-lists .logo-mini {
+  background-position: 0 -3900px;
+}
+.choose-brand .brand-lists .logo-mingjue {
+  background-position: 0 -3950px;
+}
+.choose-brand .brand-lists .logo-mashaladi {
+  background-position: 0 -4000px;
+}
+.choose-brand .brand-lists .logo-meiya {
+  background-position: 0 -4050px;
+}
+.choose-brand .brand-lists .logo-maibahe {
+  background-position: 0 -4100px;
+}
+.choose-brand .brand-lists .logo-maxusdatong {
+  background-position: 0 -4150px;
+}
+.choose-brand .brand-lists .logo-mogen {
+  background-position: 0 -4200px;
+}
+.choose-brand .brand-lists .logo-maikailun {
+  background-position: 0 -4250px;
+}
+.choose-brand .brand-lists .logo-nazhijie {
+  background-position: 0 -4300px;
+}
+.choose-brand .brand-lists .logo-nanqi {
+  background-position: 0 -4350px;
+}
+.choose-brand .brand-lists .logo-oubao {
+  background-position: 0 -4400px;
+}
+.choose-brand .brand-lists .logo-ouge {
+  background-position: 0 -4450px;
+}
+.choose-brand .brand-lists .logo-qiya {
+  background-position: 0 -4500px;
+}
+.choose-brand .brand-lists .logo-qirui {
+  background-position: 0 -4550px;
+}
+.choose-brand .brand-lists .logo-qingling {
+  background-position: 0 -4600px;
+}
+.choose-brand .brand-lists .logo-richan {
+  background-position: 0 -4650px;
+}
+.choose-brand .brand-lists .logo-rongwei {
+  background-position: 0 -4700px;
+}
+.choose-brand .brand-lists .logo-ruiqi {
+  background-position: 0 -4750px;
+}
+.choose-brand .brand-lists .logo-sikeda {
+  background-position: 0 -4800px;
+}
+.choose-brand .brand-lists .logo-sanling {
+  background-position: 0 -4850px;
+}
+.choose-brand .brand-lists .logo-sibalu {
+  background-position: 0 -4900px;
+}
+.choose-brand .brand-lists .logo-smart {
+  background-position: 0 -4950px;
+}
+.choose-brand .brand-lists .logo-shuanghuan {
+  background-position: 0 -5000px;
+}
+.choose-brand .brand-lists .logo-shuanglong {
+  background-position: 0 -5050px;
+}
+.choose-brand .brand-lists .logo-sabo {
+  background-position: 0 -5100px;
+}
+.choose-brand .brand-lists .logo-shijue {
+  background-position: 0 -5200px;
+}
+.choose-brand .brand-lists .logo-saibao {
+  background-position: 0 -5050px;
+}
+.choose-brand .brand-lists .logo-tianjinyiqi {
+  background-position: 0 -5300px;
+}
+.choose-brand .brand-lists .logo-tianma {
+  background-position: 0 -5350px;
+}
+.choose-brand .brand-lists .logo-tesila {
+  background-position: 0 -5500px;
+}
+.choose-brand .brand-lists .logo-tongbao {
+  background-position: 0 -5400px;
+}
+.choose-brand .brand-lists .logo-tongtian {
+  background-position: 0 -5450px;
+}
+.choose-brand .brand-lists .logo-wuling {
+  background-position: 0 -5550px;
+}
+.choose-brand .brand-lists .logo-woerwo {
+  background-position: 0 -5600px;
+}
+.choose-brand .brand-lists .logo-weilin {
+  background-position: 0 -5650px;
+}
+.choose-brand .brand-lists .logo-wushiling {
+  background-position: 0 -5700px;
+}
+.choose-brand .brand-lists .logo-wanfeng {
+  background-position: 0 -5750px;
+}
+.choose-brand .brand-lists .logo-xiandai {
+  background-position: 0 -5800px;
+}
+.choose-brand .brand-lists .logo-xuefolan {
+  background-position: 0 -5850px;
+}
+.choose-brand .brand-lists .logo-xuetielong {
+  background-position: 0 -5900px;
+}
+.choose-brand .brand-lists .logo-xiyate {
+  background-position: 0 -6000px;
+}
+.choose-brand .brand-lists .logo-xiamenjinlong {
+  background-position: 0 -5950px;
+}
+.choose-brand .brand-lists .logo-xinkai {
+  background-position: 0 -6050px;
+}
+.choose-brand .brand-lists .logo-yingfeinidi {
+  background-position: 0 -6100px;
+}
+.choose-brand .brand-lists .logo-yiweike {
+  background-position: 0 -6150px;
+}
+.choose-brand .brand-lists .logo-yiqi {
+  background-position: 0 -6200px;
+}
+.choose-brand .brand-lists .logo-yinglun {
+  background-position: 0 -6250px;
+}
+.choose-brand .brand-lists .logo-yongyuanqiche {
+  background-position: 0 -6300px;
+}
+.choose-brand .brand-lists .logo-yunque {
+  background-position: 0 -6350px;
+}
+.choose-brand .brand-lists .logo-zhongshun {
+  background-position: 0 -6550px;
+}
+.choose-brand .brand-lists .logo-zhonghua {
+  background-position: 0 -6400px;
+}
+.choose-brand .brand-lists .logo-zhongtai {
+  background-position: 0 -6450px;
+}
+.choose-brand .brand-lists .logo-zhongxing {
+  background-position: 0 -6500px;
+}
+.choose-brand .brand-lists .logo-zhongou {
+  background-position: 0 -6600px;
 }
 
 .choose-style .style-wrapper {
@@ -567,6 +975,9 @@ a {
 .iautos-wrap .left-box .list a {
   color: #fff;
 }
+.iautos-wrap .left-box .search-form {
+  color: #333;
+}
 .iautos-wrap .left-box .search-text {
   width: 56%;
   height: 36px;
@@ -574,7 +985,6 @@ a {
   padding-left: 10px;
   background-color: #fff;
   border: 1px solid #ccc;
-  color: #000;
   border-radius: 3px;
 }
 .iautos-wrap .left-box .search-btn {
@@ -585,10 +995,9 @@ a {
   top: 37px;
   left: 0;
   width: 60.9%;
-  padding: 8px 0;
   background-color: #fff;
-  border: 1px solid #ccc;
-  border-top-color: #fff;
+  border: 1px solid #f29600;
+  border-top: none;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   z-index: 2;
@@ -596,6 +1005,10 @@ a {
 .iautos-wrap .left-box .search-list li {
   line-height: 36px;
   padding-left: 10px;
+  border-top: 1px solid #f0f0f0;
+}
+.iautos-wrap .left-box .search-list li:hover {
+  background-color: #f7f7f7;
 }
 .iautos-wrap .mid-box {
   width: 49.5%;

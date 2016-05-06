@@ -208,6 +208,7 @@
 			}
 		}
 		.search-form {
+			color: #333;
 			@extend %relative;
 			@extend %margin-top-twenty;
 		}
@@ -218,7 +219,6 @@
 			padding-left: 10px;
 			background-color: #fff;
 			border: 1px solid #ccc;
-			color: #000;
 			border-radius: 3px;
 			@extend %float-left;
 			@extend %font-twelve;
@@ -233,19 +233,20 @@
 			top: 37px;
 			left: 0;
 			width: 60.9%;
-			padding: 8px 0;
 			background-color: #fff;
-			border: 1px solid #ccc;
-			border-top-color: #fff;
+			border: 1px solid #f29600;
+			border-top: none;
 			border-bottom-left-radius: 3px;
 			border-bottom-right-radius: 3px;
 			z-index: 2;
 			li {
 				line-height: 36px;
 				padding-left: 10px;
-				@extend %font-fourteen;
+				border-top: 1px solid #f0f0f0;
+				@extend %font-twelve;
 				@extend %pointer;
 				&:hover {
+					background-color: #f7f7f7;
 					@extend %iautos-orange;
 				}
 			}

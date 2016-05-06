@@ -30,6 +30,7 @@ $(document).ready(function() {
 	// 选车输入框焦点事件
 	$('.search-text').focus(function() {
 		$(this).css({
+			'border-color': '#f29600',
 			'border-bottom-left-radius': '0px',
 			'border-bottom-right-radius': '0px'
 		});
@@ -38,14 +39,15 @@ $(document).ready(function() {
 
 	$('.search-text').blur(function() {
 		var $that = $(this);
-		
+
 		var blurEvent = setTimeout(function() {
 			$that.css({
+				'border-color': '#ccc',
 				'border-bottom-left-radius': '3px',
 				'border-bottom-right-radius': '3px'
 			});
 			$('.search-list').hide();
-		}, 100);
+		}, 150);
 	});
 
 	$('.search-list li').on('click', function() {
