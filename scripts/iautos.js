@@ -8,8 +8,9 @@ $(document).ready(function() {
 	textEffect.textEllipsis('hotNews', 3);
 
 	// 执行轮播图.
-	var swiperEvent = new SwiperEvent();
-	swiperEvent.liSwiperAuto('iautosBanner li', 'iautosBannerPager li', 3, 600);
+	var bannerSwiperEvent = new BannerSwiperEvent();
+
+	bannerSwiperEvent.liSwiperAuto('#iautosBanner', '#iautosBannerPager li', 600, 3000);
 
 	// 厂商认证模块车源初始随机显示一个品牌.
 	randomConfirmCars('.brand-ico');
@@ -272,44 +273,55 @@ var TextEffect = function() {
 };
 
 // banner swiper function.
-var SwiperEvent = function() {
-	this.liSwiperAuto = function(Vater, pagers, visibleCapacity, duration) {
+var BannerSwiperEvent = function() {
+	this.liSwiperAuto = function(Vater, pagers, duration, waiting) {
 		// swiper eins once
-		var dealerListWidth = $( '#' + Vater ).eq(0).outerWidth(true);
-		var dealerListNumber = $( '#' + Vater ).length;
-		var thisPic = 0;
+		var imgTotal = $( Vater + ' li' ).length;
+		var imgNum = 0;
+		var imgtimer;
 
-		$( '#' + Vater ).each(function() {
-			$(this).css({
-				'position': 'absolute',
-				'top': 0,
-				'left': ( dealerListWidth * $(this).index() ) + 'px'
+		function ShowBigByNum(num, speed) {
+			var imgWidth = $( Vater + ' li' ).eq(0).outerWidth(true);
+			var spaceWidth = 0;
+
+			$( Vater ).animate({left:"-"+(imgWidth*num-(-spaceWidth*num))+"px"},speed,function(){
+				if(num == imgTotal-1)
+				{
+					$( Vater ).css({"left":"-0px"})
+					imgNum = 0;
+				}
+				else
+				{
+					imgNum = num;
+				}
+				$( pagers ).removeClass("active").html('');
+				$( pagers ).eq(imgNum).addClass("active").html('<i></i>');
 			});
+		};
+
+		imgtimer = setInterval(function() {
+			var num = imgNum-(-1);
+			if(num == imgTotal)
+				num = 0;
+			ShowBigByNum(num, duration);
+		},waiting);
+		
+		$( pagers ).hover(function() {
+			var indexnum = $(this).index();
+
+			clearInterval(imgtimer);
+
+			$( pagers ).removeClass("active").html('');
+			$( pagers ).eq(imgNum).addClass("active").html('<i></i>');
+			ShowBigByNum(indexnum, duration * 0.7);
+		},function() {
+			clearInterval(imgtimer);
+			imgtimer = setInterval(function() {
+				var num = imgNum-(-1);
+				if(num == imgTotal)
+					num = 0;
+				ShowBigByNum(num, duration * 0.7);
+			},waiting);
 		});
-
-		var autoSwiper = setInterval(function() {
-			var theFirstList = $( '#' + Vater ).eq(0);
-			var theLastListLeft = Number($( '#' + Vater ).eq(dealerListNumber - 1).css('left').split('px')[0]);
-
-			if ( theLastListLeft == dealerListWidth ) {
-				theFirstList.css({'left': ( dealerListWidth * ( visibleCapacity - 1 ) ) + 'px'}).remove();
-				$( '#' + Vater ).parent().append(theFirstList);
-			}
-
-			$( '#' + Vater ).each(function() {
-				$(this).animate({left: '-=' + dealerListWidth + 'px'}, duration);
-			});
-
-			thisPic++;
-
-			if ( thisPic > 2 ) {
-				thisPic = 0;
-			}
-
-			var autoSwiperPagers = setInterval(function() {
-				$('#' + pagers).html('');
-				$('#' + pagers).eq(thisPic).html('<i></i>');
-			}, ( duration / 2 ) );
-		}, 3000);
 	}
 }

@@ -65,7 +65,7 @@ a {
   float: right;
 }
 
-.iautos-wrap .left-box .search-form, .iautos-wrap .good-cars, .iautos-wrap .bottom-box, .iautos-wrap .plugin-wrap, .iautos-wrap .expert-ping .search-btn, .iautos-wrap .link {
+.iautos-wrap .advertisement, .iautos-wrap .top-block, .iautos-wrap .left-box .search-form, .iautos-wrap .good-cars, .iautos-wrap .bottom-box, .iautos-wrap .plugin-wrap, .iautos-wrap .expert-ping .search-btn, .iautos-wrap .link {
   margin-top: 20px;
 }
 
@@ -120,7 +120,7 @@ a {
   outline: none;
 }
 
-.choose-style, .choose-year, .choose-detail, .choose-detail .choose-detail-list, .iautos-wrap .left-box .address, .iautos-wrap .left-box .search-form, .iautos-wrap .mid-top, .iautos-wrap .iautos-banner, .iautos-wrap .iautos-banner-pager li, .iautos-wrap .block-title, .iautos-wrap .link-ico, .iautos-wrap .select-text, .iautos-wrap .choose-style-btn {
+.choose-style, .choose-year, .choose-detail, .choose-detail .choose-detail-list, .iautos-wrap .left-box .address, .iautos-wrap .left-box .search-form, .iautos-wrap .mid-top, .iautos-wrap .iautos-banner-pager li, .iautos-wrap .block-title, .iautos-wrap .link-ico, .iautos-wrap .select-text, .iautos-wrap .choose-style-btn {
   position: relative;
 }
 
@@ -335,9 +335,6 @@ a {
   margin: 1px auto 10px;
   background: url(../../images/car-logo-hover.jpg) no-repeat;
   background-size: 100%;
-}
-.choose-brand .brand-lists .img:hover {
-  background-image: url(../../images/car-logo.jpg);
 }
 .choose-brand .brand-lists .logo-aodi {
   background-position: 0 0;
@@ -800,7 +797,6 @@ a {
 }
 .iautos-wrap .advertisement {
   height: 60px;
-  margin: 20px 0;
   overflow: hidden;
 }
 .iautos-wrap .left-box {
@@ -982,7 +978,7 @@ a {
   color: #333;
 }
 .iautos-wrap .left-box .search-text {
-  width: 62%;
+  width: 56%;
   height: 36px;
   line-height: 36px;
   padding-left: 10px;
@@ -1490,9 +1486,9 @@ a {
   overflow: hidden\9;
 }
 .iautos-wrap .link {
-  height: 137px;
+  min-height: 137px;
   margin-bottom: 10px;
-  padding: 20px 3% 0;
+  padding: 20px 3% 8px;
 }
 .iautos-wrap .link-nav {
   margin-left: -20px;
