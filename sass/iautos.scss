@@ -542,6 +542,27 @@
 		}
 		.img {
 			height: 174px;
+			@extend %relative;
+		}
+		.lexus-fixed {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			width: 81px;
+			height: 35px;
+			background: url(#{$img-prefix}images/lexus-new-logo.jpg) no-repeat;
+			background-size: 100%;
+		}
+		.porsche-fixed {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 28px;
+			background: url(#{$img-prefix}images/porsche-new-logo.png) no-repeat;
+			background-size: 100%;
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
 		}
 		.neun-confirm {
 			position: absolute;

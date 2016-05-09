@@ -120,7 +120,7 @@ a {
   outline: none;
 }
 
-.choose-style, .choose-year, .choose-detail, .choose-detail .choose-detail-list, .iautos-wrap .left-box .address, .iautos-wrap .left-box .search-form, .iautos-wrap .mid-top, .iautos-wrap .iautos-banner-pager li, .iautos-wrap .block-title, .iautos-wrap .link-ico, .iautos-wrap .select-text, .iautos-wrap .choose-style-btn {
+.choose-style, .choose-year, .choose-detail, .choose-detail .choose-detail-list, .iautos-wrap .left-box .address, .iautos-wrap .left-box .search-form, .iautos-wrap .mid-top, .iautos-wrap .iautos-banner-pager li, .iautos-wrap .block-title, .iautos-wrap .link-ico, .iautos-wrap .lists .img, .iautos-wrap .select-text, .iautos-wrap .choose-style-btn {
   position: relative;
 }
 
@@ -739,6 +739,11 @@ a {
   background-position: 0 -6600px;
 }
 
+#choose-series {
+  height: 446px;
+  overflow-y: auto;
+}
+
 .choose-style .style-wrapper {
   padding: 9px 0;
 }
@@ -750,13 +755,23 @@ a {
   margin-right: 20px;
 }
 
+#year-lists {
+  height: 336px;
+  overflow-y: auto;
+}
+
 .choose-year ul {
-  width: 320px;
+  width: 340px;
   margin: 90px auto 0;
 }
 .choose-year li {
   width: 160px;
   line-height: 42px;
+}
+
+#type-choose-main {
+  height: 446px;
+  overflow-y: auto;
 }
 
 .choose-detail .detail-year {
@@ -1244,6 +1259,26 @@ a {
 }
 .iautos-wrap .lists .img {
   height: 174px;
+}
+.iautos-wrap .lists .lexus-fixed {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 81px;
+  height: 35px;
+  background: url(../../images/lexus-new-logo.jpg) no-repeat;
+  background-size: 100%;
+}
+.iautos-wrap .lists .porsche-fixed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 28px;
+  background: url(../../images/porsche-new-logo.png) no-repeat;
+  background-size: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 .iautos-wrap .lists .neun-confirm {
   position: absolute;

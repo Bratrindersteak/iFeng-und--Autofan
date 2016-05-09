@@ -281,6 +281,10 @@
 		.logo-zhongou{background-position:0 -6600px;}
 	}
 }
+#choose-series {
+	height: 446px;
+	overflow-y: auto;
+}
 .choose-style {
 	@extend %relative;
 	.style-wrapper {
@@ -303,10 +307,14 @@
 		}
 	}
 }
+#year-lists {
+	height: 336px;
+	overflow-y: auto;
+}
 .choose-year {
 	@extend %relative;
 	ul {
-		width: 320px;
+		width: 340px;
 		margin: 90px auto 0;
 	}
 	li {
@@ -322,6 +330,10 @@
 			@extend %iautos-orange;
 		}
 	}
+}
+#type-choose-main {
+	height: 446px;
+	overflow-y: auto;
 }
 .choose-detail {
 	@extend %relative;
