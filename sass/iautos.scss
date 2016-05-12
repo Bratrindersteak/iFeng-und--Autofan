@@ -7,7 +7,6 @@
 	margin: 0 auto;
 	.advertisement {
 		width: 100%;
-		height: 60px;
 		overflow: hidden;
 		@extend %margin-top-twenty;
 	}
@@ -370,6 +369,7 @@
 			line-height: 43px;
 			background-color: #e6e6e6;
 			color: #666;
+			overflow: hidden;
 			@extend %text-align;
 			@extend %font-twelve;
 		}
@@ -471,6 +471,7 @@
 			border-top: 3px solid #fff;
 			border-bottom: 1px solid #f29600;
 			color: #000;
+			font-family: Microsoft Yahei;
 			@extend %float-left;
 			@extend %font-fourteen;
 			span {
@@ -502,7 +503,6 @@
 		border-radius: 8px;
 		vertical-align: -3px;
 		#{$ie7-}vertical-align: 1px;
-		-ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865474, M12=-0.7071067811865477, M21=0.7071067811865477, M22=0.7071067811865474, SizingMethod='auto expand')";
 		@extend %relative;
 		&:after {
 			top: 5px;

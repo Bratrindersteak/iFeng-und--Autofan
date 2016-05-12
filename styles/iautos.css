@@ -812,7 +812,6 @@ a {
 }
 .iautos-wrap .advertisement {
   width: 100%;
-  height: 60px;
   overflow: hidden;
 }
 .iautos-wrap .left-box {
@@ -1111,6 +1110,7 @@ a {
   line-height: 43px;
   background-color: #e6e6e6;
   color: #666;
+  overflow: hidden;
 }
 .iautos-wrap .right-top .style {
   padding: 0 5px;
@@ -1205,6 +1205,7 @@ a {
   border-top: 3px solid #fff;
   border-bottom: 1px solid #f29600;
   color: #000;
+  font-family: Microsoft Yahei;
 }
 .iautos-wrap .block-title li span {
   padding: 0 16px;
@@ -1226,7 +1227,6 @@ a {
   border-radius: 8px;
   vertical-align: -3px;
   +vertical-align: 1px;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865474, M12=-0.7071067811865477, M21=0.7071067811865477, M22=0.7071067811865474, SizingMethod='auto expand')";
 }
 .iautos-wrap .link-ico:after {
   top: 5px;
